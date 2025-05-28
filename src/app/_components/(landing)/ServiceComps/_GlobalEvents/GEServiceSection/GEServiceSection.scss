@@ -1,0 +1,19 @@
+.ge-service-section {
+  @apply relative pt-52 pb-14;
+
+  .form-content-block {
+    @apply mt-16 grid grid-cols-2 gap-x-6;
+
+    .form-action-row {
+      @apply flex justify-between items-center gap-x-4;
+
+      .btn {
+        @apply w-[170px];
+      }
+
+      .form-action-text {
+        @apply text-gray-400/85 text-[14.75px] leading-[24px] w-1/2;
+      }
+    }
+  }
+}

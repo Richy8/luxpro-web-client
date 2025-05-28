@@ -1,0 +1,39 @@
+.feature-section {
+  .top-section {
+    @apply pt-[120px] pb-24 flex flex-col justify-start items-center gap-y-4 w-2/5 mx-auto;
+
+    .title-text {
+      @apply text-gray-800 text-5xl leading-[56px] font-bold text-center;
+    }
+
+    .description-text {
+      @apply text-gray-400 text-lg font-medium text-center;
+    }
+  }
+
+  .bottom-section {
+    @apply pb-[120px] grid grid-cols-2 gap-x-10 px-[76px];
+
+    .feature-item {
+      .feature-item-content {
+        @apply flex flex-col justify-start items-start first-of-type:mb-24 last-of-type:mt-16;
+
+        .feature-item-title {
+          @apply text-gray-800 text-[40px] font-bold mb-2.5;
+        }
+
+        .feature-item-description {
+          @apply text-gray-400/90 text-[17.75px] leading-[28px] pr-14 mb-7;
+        }
+      }
+
+      .feature-image {
+        @apply w-full h-[680px] overflow-hidden rounded-3xl;
+
+        img {
+          @apply w-full h-full object-cover;
+        }
+      }
+    }
+  }
+}

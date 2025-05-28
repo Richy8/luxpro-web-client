@@ -1,0 +1,59 @@
+.et-service-row {
+  @apply flex justify-between items-center gap-x-16 mb-24 last-of-type:mb-0;
+
+  .image-display-block {
+    @apply relative w-[52%] h-[680px] overflow-hidden rounded-3xl bg-gray-200;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .content-block {
+    @apply w-[42%];
+
+    .package-title {
+      @apply text-gray-800 text-[40px] font-bold mb-3;
+    }
+
+    .package-description {
+      @apply text-gray-400 text-lg mb-6;
+    }
+
+    .package-amount {
+      @apply text-main-primary text-[28px] font-bold mb-7;
+    }
+
+    .package-features {
+      @apply flex flex-col justify-start items-start gap-y-2;
+
+      .package-features-title {
+        @apply text-gray-800 text-[19px] font-bold mb-2.5;
+      }
+
+      .package-features-list {
+        @apply flex flex-col justify-start items-start gap-y-4;
+
+        .package-features-list-item {
+          @apply flex justify-start items-center gap-x-3;
+
+          .icon-wrapper {
+            @apply size-8 min-w-8 min-h-8 rounded-full border border-[#dbdcde]/60 flex justify-center items-center;
+
+            .icon {
+              @apply text-xl;
+            }
+          }
+
+          .text {
+            @apply text-gray-400 font-medium text-lg;
+          }
+        }
+      }
+    }
+  }
+}
+
+.et-service-row.even {
+  @apply flex-row-reverse;
+}

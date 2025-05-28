@@ -1,0 +1,41 @@
+.ge-info-section {
+  .top-area {
+    @apply flex flex-col justify-start items-center gap-y-4 w-2/5 mb-16 mx-auto;
+
+    .title-text {
+      @apply text-gray-800 text-[46px] leading-[58px] font-bold;
+    }
+
+    .subtitle-text {
+      @apply text-gray-400/95 text-lg text-center;
+    }
+  }
+
+  .base-area {
+    @apply grid grid-cols-3 gap-6 mb-[120px];
+  }
+
+  .ge-content-info-block {
+    @apply flex justify-between items-center gap-y-24 mb-[140px] mx-auto;
+
+    .ge-left-block {
+      @apply w-1/2;
+
+      .ge-image-card {
+        @apply relative w-full h-[510px] rounded-3xl overflow-hidden;
+
+        img {
+          @apply w-full h-full object-cover;
+        }
+      }
+    }
+
+    .ge-right-block {
+      @apply w-2/5;
+
+      .title-text {
+        @apply text-gray-800 text-[40px] leading-[48px] font-bold mb-7;
+      }
+    }
+  }
+}

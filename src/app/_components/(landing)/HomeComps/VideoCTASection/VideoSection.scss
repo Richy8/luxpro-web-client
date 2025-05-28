@@ -1,0 +1,35 @@
+.video-cta-section {
+  .top-area {
+    &--container {
+      @apply pt-32 pb-16 flex flex-col justify-center items-center;
+
+      .meta-text {
+        @apply text-main-primary text-xl font-medium text-center mb-4;
+      }
+
+      .title-text {
+        @apply text-gray-800 text-[56px] font-bold text-center mb-6;
+      }
+    }
+  }
+
+  .base-area {
+    @apply relative h-[510px] w-full overflow-hidden;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+
+    .overlay {
+      @apply absolute top-0 left-0 w-full h-full bg-black/10;
+    }
+
+    .play-button {
+      @apply absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-[106px] min-w-[106px] min-h-[106px] rounded-full flex justify-center items-center cursor-pointer bg-[#fcfcfd]/25 backdrop-blur-[20px];
+
+      .icon {
+        @apply text-base-white text-[68px] transition duration-300 ease-in-out hover:scale-[110%];
+      }
+    }
+  }
+}

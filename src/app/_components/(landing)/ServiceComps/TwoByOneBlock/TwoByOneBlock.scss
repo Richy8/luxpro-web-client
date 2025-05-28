@@ -1,0 +1,39 @@
+.two-by-one-block {
+  @apply flex justify-between items-start gap-x-4 mt-16 mb-24;
+
+  .left-slot-block {
+    @apply w-[55%];
+  }
+
+  .right-slot-block {
+    @apply w-[32%] border border-[#E9EBED] rounded-[20px] p-6;
+  }
+}
+
+.is-checkout {
+  @apply flex justify-between items-start gap-16 my-0;
+
+  .left-slot-block {
+    @apply w-1/2;
+  }
+
+  .right-slot-block {
+    @apply w-[32%] border-0 rounded-none p-0;
+  }
+}
+
+.is-stack {
+  @apply flex justify-between items-start gap-x-16;
+
+  .left-slot-block {
+    @apply w-[57%];
+  }
+
+  .right-slot-block {
+    @apply w-[28%];
+  }
+}
+
+.content-text {
+  @apply text-gray-400 text-[17.5px] leading-[28px] mb-8;
+}

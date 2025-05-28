@@ -1,0 +1,63 @@
+.profile-menu {
+  @apply absolute z-30 top-14 -right-4 w-[330px] h-auto backdrop-blur-[36px] bg-gradient-to-b from-[rgba(73,73,73,0.65)] to-[rgba(51,50,50,0.65)] rounded-xl shadow-lg animate-slide-down border border-gray-300/80;
+
+  .menu-wrapper {
+    @apply relative z-30 flex flex-col justify-start items-start gap-y-8 py-8 px-6 after:absolute after:size-3 after:right-[9%] after:-top-1.5 after:bg-[#818285] after:-z-10 after:rotate-45 after:hidden backdrop-blur-[54px] rounded-xl;
+
+    .nav-list {
+      @apply flex flex-col justify-start items-start gap-y-4 w-full;
+
+      &-item {
+        @apply flex justify-between items-center gap-x-4 w-full cursor-pointer;
+
+        .nav-link {
+          @apply flex justify-start items-center gap-x-3 text-base-white font-medium hover:text-main-primary;
+
+          &-icon {
+            @apply text-2xl transition duration-300 ease-in-out;
+          }
+
+          &-text {
+            @apply text-base transition duration-300 ease-in-out;
+          }
+        }
+      }
+    }
+
+    .nav-line {
+      @apply w-full h-[1px] bg-[#e9ebed]/70;
+    }
+
+    .nav-options {
+      @apply flex flex-col justify-start items-start gap-y-8 w-full;
+
+      .profile-row {
+        @apply flex justify-start items-center gap-x-4 w-full;
+
+        &--img {
+          @apply size-12 min-w-12 min-h-12 rounded-full bg-main-primary flex justify-center items-center text-lg text-base-white font-semibold;
+        }
+
+        &--user {
+          @apply flex flex-col justify-start items-start gap-y-0.5 w-full;
+
+          &-name {
+            @apply text-gray-50 font-medium text-base;
+          }
+
+          &-email {
+            @apply text-gray-100/85 text-sm;
+          }
+        }
+      }
+
+      .btn-row {
+        @apply flex justify-between items-center gap-x-6 w-full;
+
+        .btn {
+          @apply w-full;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.discover-card {
+  @apply pt-[100px] pb-[30px];
+
+  .top-row {
+    .title-text {
+      @apply text-gray-700 text-[44px] leading-[56px] font-bold mb-12;
+    }
+  }
+
+  .base-row {
+    .service-row {
+      @apply grid grid-cols-4 grid-flow-row gap-6;
+    }
+  }
+}

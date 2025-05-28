@@ -1,0 +1,27 @@
+.list-item-block {
+  @apply relative;
+
+  .list-title {
+    @apply text-gray-600 text-[18px] font-semibold mb-4;
+  }
+
+  .list-content {
+    @apply flex flex-col justify-start items-start gap-y-4;
+
+    .list-item {
+      @apply flex justify-start items-center gap-x-3;
+
+      .icon-wrapper {
+        @apply size-8 min-w-8 min-h-8 rounded-full border border-[#dbdcde]/60 flex justify-center items-center;
+
+        .icon {
+          @apply text-xl;
+        }
+      }
+
+      .text {
+        @apply text-gray-400 font-medium text-[17px];
+      }
+    }
+  }
+}

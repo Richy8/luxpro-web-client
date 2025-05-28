@@ -1,0 +1,19 @@
+.pm-service-card {
+  @apply rounded-[20px] border border-[#e5e7ea] flex flex-col justify-center items-center p-6;
+
+  .icon-wrapper {
+    @apply size-14 min-w-14 min-h-12 rounded-full flex justify-center items-center border border-[#E9EBED] mb-6;
+
+    .icon {
+      @apply text-[28px] text-main-primary;
+    }
+  }
+
+  .title-text {
+    @apply text-gray-800 text-lg font-semibold text-center mb-4;
+  }
+
+  .description-text {
+    @apply text-gray-300 text-[16.5px] text-center;
+  }
+}

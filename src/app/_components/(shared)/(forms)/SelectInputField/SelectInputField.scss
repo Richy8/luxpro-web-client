@@ -1,0 +1,11 @@
+.select-input-field {
+  .select-icon {
+    @apply absolute top-1/2 -translate-y-1/2 left-4 z-10 text-lg text-gray-400;
+  }
+
+  .input-has-icon {
+    .form-control {
+      @apply pl-11;
+    }
+  }
+}

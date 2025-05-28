@@ -1,0 +1,68 @@
+export const COLORS: Record<string, string> = {
+  // MAIN COLORS
+  "main-primary": "#D2AC67",
+  "main-primary-100": "#f1ece5",
+  "main-primary-200": "#e3d9cb",
+  "main-primary-300": "#d4c7b2",
+  "main-primary-400": "#c6b498",
+  "main-primary-500": "#b8a17e",
+  "main-primary-600": "#a08358",
+  "main-primary-700": "#786342",
+  "main-primary-800": "#50422c",
+  "main-primary-900": "#282116",
+
+  "main-secondary": "#5B3C17",
+  "main-secondary-100": "#efd9c0",
+  "main-secondary-200": "#dfb481",
+  "main-secondary-300": "#cf8e41",
+  "main-secondary-400": "#9a6627",
+  "main-secondary-500": "#5b3c17",
+  "main-secondary-600": "#493012",
+  "main-secondary-700": "#37240e",
+  "main-secondary-800": "#241809",
+  "main-secondary-900": "#120c05",
+
+  "main-tertiary": "#C02631",
+  "main-tertiary-100": "#f6d0d3",
+  "main-tertiary-200": "#eca2a7",
+  "main-tertiary-300": "#e3737b",
+  "main-tertiary-400": "#da444f",
+  "main-tertiary-500": "#c02631",
+  "main-tertiary-600": "#9a1e27",
+  "main-tertiary-700": "#73171d",
+  "main-tertiary-800": "#4d0f14",
+  "main-tertiary-900": "#26080a",
+
+  "main-grey": "#818285",
+  "main-grey-100": "#e6e6e7",
+  "main-grey-200": "#cdcdce",
+  "main-grey-300": "#b3b4b6",
+  "main-grey-400": "#9a9b9d",
+  "main-grey-500": "#818285",
+  "main-grey-600": "#67686a",
+  "main-grey-700": "#4d4e50",
+  "main-grey-800": "#343435",
+  "main-grey-900": "#1a1a1b",
+
+  // ALERT COLORS
+  "alert-success": "#25DC37",
+  "alert-error": "#EB3F5E",
+  "alert-warning": "#FFCD1A",
+
+  // BASE COLORS
+  "base-white": "#FFFFFF",
+  "base-background": "#FCFCFD",
+  "base-line": "#E9EBED",
+
+  // GRAYSCALE COLORS
+  "gray-50": "#E5E5E7",
+  "gray-100": "#CDCDCD",
+  "gray-200": "#A2A1A7",
+  "gray-300": "#7D7C84",
+  "gray-400": "#5E5D65",
+  "gray-500": "#44444C",
+  "gray-600": "#302F37",
+  "gray-700": "#201F26",
+  "gray-800": "#141418",
+  "gray-900": "#09080D",
+};

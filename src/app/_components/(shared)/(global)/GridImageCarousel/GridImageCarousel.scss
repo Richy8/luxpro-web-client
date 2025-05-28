@@ -1,0 +1,90 @@
+.grid-image-carousel {
+  @apply flex justify-between items-start gap-6 h-[580px];
+
+  .primary-card {
+    @apply relative rounded-3xl overflow-hidden h-full w-[67%] bg-gray-100/50;
+
+    .image-carousel {
+      @apply h-full flex; // Use flex to lay out images horizontally
+      transition: transform 0.7s ease-in-out; // Smooth sliding animation
+
+      .image-item {
+        @apply relative w-full h-full flex-shrink-0;
+      }
+    }
+
+    .overlay {
+      @apply absolute inset-0 z-[5]; // Ensure overlay is above images but below indicators
+
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.05) 0%,
+        rgba(0, 0, 0, 0.35) 50%,
+        rgba(0, 0, 0, 0.6) 65%,
+        rgba(0, 0, 0, 0.7) 80%,
+        rgba(0, 0, 0, 0.7) 100%
+      );
+    }
+
+    .control {
+      @apply absolute size-11 min-w-11 min-h-11 top-1/2 -translate-y-1/2 rounded-full overflow-hidden cursor-pointer z-20 backdrop-blur-[20px] flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-main-primary/65;
+      background: rgba(129, 130, 133, 0.35);
+
+      .icon {
+        @apply relative text-white font-medium text-xl;
+      }
+
+      &-left {
+        @apply left-9;
+      }
+
+      &-right {
+        @apply right-9;
+
+        .icon {
+          @apply rotate-180;
+        }
+      }
+    }
+
+    .indicator {
+      @apply absolute z-10 bottom-0 w-full py-8 mx-auto flex justify-center items-center gap-x-1.5;
+
+      .indicator-item {
+        @apply size-2 rounded-full bg-[#B1B5C3] transition-all duration-300 ease-in-out cursor-pointer;
+        border: none;
+        padding: 0;
+
+        &:hover {
+          @apply bg-opacity-75;
+        }
+
+        &:focus-visible {
+          @apply ring-2 ring-offset-1 ring-base-white ring-offset-black;
+        }
+
+        &--active {
+          @apply w-6 bg-base-white;
+        }
+      }
+    }
+  }
+
+  .secondary-card {
+    @apply h-full w-[33%] flex flex-col justify-between items-start gap-6;
+
+    &-display {
+      @apply relative rounded-3xl overflow-hidden w-full h-1/2 bg-gray-100/50;
+    }
+
+    &.fading-out {
+      opacity: 1;
+      transition: opacity 0.6s ease-in-out;
+    }
+
+    &.fading-in {
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out 0s;
+    }
+  }
+}

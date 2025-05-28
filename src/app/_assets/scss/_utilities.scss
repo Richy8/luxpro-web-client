@@ -1,0 +1,115 @@
+.center-layout {
+  @apply mt-[20px] mx-auto my-0;
+  width: calc(100% - 48vw);
+
+  @include breakpoint-down(md) {
+    @apply w-4/5;
+  }
+
+  @include breakpoint-down(sm) {
+    @apply w-[92%];
+  }
+
+  .paragraph-text {
+    @apply text-lg md:text-[15.75px] leading-[28px] md:leading-[28px] mb-[28px] text-justify md:text-left text-gray-500;
+  }
+
+  .header-text {
+    @apply text-[28px] md:text-[24px] sm:text-[22px] leading-[38px] font-bold mt-[42px] mb-[28px] md:mb-[24px];
+  }
+
+  .item-list {
+    @apply pl-[14px] -mt-[4px] list-disc;
+
+    li {
+      @apply mb-[12px] text-justify md:text-left text-[17px] md:text-[15.75px] leading-[28px] md:leading-[28px] text-gray-500;
+    }
+
+    &.numeric-type {
+      @apply pl-[32px] list-decimal;
+    }
+  }
+
+  .data-item-set {
+    .item-row {
+      @apply flex justify-between items-start gap-[2%] text-base leading-[26.5px] py-[14px] px-[16px];
+
+      .item-key {
+        @apply w-1/4;
+      }
+
+      .item-value {
+        @apply w-[73%];
+      }
+    }
+  }
+
+  .link-list {
+    li {
+      @apply mb-[3px];
+    }
+  }
+}
+
+.shimmer-effect {
+  @apply animate-shimmer;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 224, 224, 0.55) 25%,
+    rgba(240, 240, 240, 0.55) 50%,
+    rgba(224, 224, 224, 0.55) 75%
+  );
+  background-size: 200% 100%;
+}
+
+.services-hero-section {
+  @apply relative h-screen w-full overflow-hidden;
+
+  .hero-image {
+    @apply w-full h-full object-cover;
+
+    // Animation properties
+    animation-name: kenBurnsGentleZoom; // New animation name
+    animation-duration: 12s; // Duration for one phase (e.g., 1 to 1.2, or 1.2 to 1)
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: center center;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.55) 40%,
+      rgba(0, 0, 0, 0.55) 68%,
+      rgba(246, 240, 231, 0.4) 85%,
+      rgba(246, 240, 231, 0.85) 95%,
+      #f6f0e7 100%
+    );
+  }
+
+  .hero-container {
+    @apply absolute top-4 left-1/2 -translate-x-1/2 h-full flex flex-col justify-center items-start;
+
+    .header-text {
+      @apply font-extrabold mb-4 text-[64px] leading-[72px] text-transparent;
+      background: linear-gradient(168.31deg, #ffffff 29.32%, #d2ac67 119.14%);
+      background-clip: text;
+    }
+
+    .description-text {
+      @apply text-white font-medium text-lg mb-6 w-[40%];
+    }
+  }
+}
+
+@keyframes kenBurnsGentleZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}

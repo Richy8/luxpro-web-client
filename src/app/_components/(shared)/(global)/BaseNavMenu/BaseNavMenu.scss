@@ -1,0 +1,23 @@
+.base-nav-menu {
+  @apply absolute z-30 top-[50px] -left-full w-[280px] h-auto backdrop-blur-[36px] bg-gradient-to-b from-[rgba(73,73,73,0.65)] to-[rgba(51,50,50,0.65)] rounded-xl shadow-lg animate-slide-down;
+
+  .menu-wrapper {
+    @apply relative z-30 flex flex-col justify-start items-start gap-y-8 py-8 px-6 after:absolute after:hidden after:size-3 after:right-1/2 after:-top-1.5 after:bg-[#818285] after:-z-10 after:rotate-45 backdrop-blur-[54px] rounded-xl;
+
+    .nav-list {
+      @apply flex flex-col justify-start items-start gap-y-6 w-full;
+
+      &-item {
+        @apply cursor-pointer flex justify-start items-center gap-x-3 w-full text-base-white font-medium hover:text-main-primary;
+
+        .nav-icon {
+          @apply text-xl transition duration-300 ease-in-out;
+        }
+
+        .nav-text {
+          @apply text-base transition duration-300 ease-in-out;
+        }
+      }
+    }
+  }
+}

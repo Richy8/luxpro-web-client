@@ -1,27 +1,41 @@
 {
-  "name": "luxpro-web-v1",
+  "name": "luxpro-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev -p 3020",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "@heroicons/react": "^2.1.5",
+    "@next/third-parties": "^15.2.3",
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.6",
+    "framer-motion": "^11.18.2",
+    "gsap": "^3.13.0",
+    "lodash": "^4.17.21",
+    "next": "^14.2.24",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "react-tilt": "^1.0.2",
+    "sass": "^1.80.3",
+    "sass-math": "^1.0.0",
+    "sharp": "^0.33.5",
+    "uuid": "^11.0.5",
+    "zustand": "^5.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/lodash": "^4.17.16",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

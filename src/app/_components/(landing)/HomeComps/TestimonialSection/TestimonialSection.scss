@@ -1,0 +1,31 @@
+.testimonial-section {
+  @apply bg-main-grey-800/95 py-28;
+
+  .top-section {
+    @apply mb-20;
+
+    .title-text {
+      @apply text-base-white text-center mx-auto text-5xl font-bold w-1/2;
+    }
+  }
+
+  .base-section {
+    .testimonial-carousel {
+      @apply overflow-hidden w-full py-[2rem];
+
+      .testimonial-track {
+        @apply flex gap-[2rem] w-fit animate-scroll-left will-change-transform;
+        backface-visibility: hidden;
+        animation-play-state: running;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
+    }
+  }
+}

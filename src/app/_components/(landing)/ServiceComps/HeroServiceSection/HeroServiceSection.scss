@@ -1,0 +1,34 @@
+.hero-service-section {
+  @apply relative h-screen w-full;
+
+  .hero-image {
+    @apply w-full h-full object-cover;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 40%,
+      rgba(0, 0, 0, 0.1) 65%,
+      rgba(246, 240, 231, 0.65) 85%,
+      rgba(246, 240, 231, 0.95) 95%,
+      #f6f0e7 100%
+    );
+  }
+
+  .hero-container {
+    @apply absolute top-4 left-1/2 -translate-x-1/2 h-full flex flex-col justify-center items-start;
+
+    .header-text {
+      @apply font-extrabold mb-4 text-[64px] leading-[72px] text-transparent;
+      background: linear-gradient(168.31deg, #ffffff 29.32%, #d2ac67 119.14%);
+      background-clip: text;
+    }
+
+    .description-text {
+      @apply text-white font-medium text-lg mb-6 w-[45%];
+    }
+  }
+}

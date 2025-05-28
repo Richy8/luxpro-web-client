@@ -1,0 +1,15 @@
+.title-top-block {
+  @apply pt-[134px] pb-24 flex flex-col justify-start items-center gap-y-9 mx-auto;
+
+  .title-text {
+    @apply text-gray-800 text-5xl leading-[56px] font-bold text-center w-1/2;
+  }
+
+  .subtitle-text {
+    @apply text-gray-400/90 text-[19px] text-center w-[43%];
+  }
+
+  .description-text {
+    @apply text-gray-400 text-3xl leading-[38px] font-medium text-center w-[70%];
+  }
+}

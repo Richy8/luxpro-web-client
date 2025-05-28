@@ -1,0 +1,25 @@
+.services-section {
+  @apply py-16;
+
+  .top-section {
+    @apply flex justify-between items-end gap-x-6 mb-20;
+
+    .top-content {
+      @apply w-1/2;
+
+      .title-text {
+        @apply text-gray-800 text-5xl leading-[56px] font-bold mb-4;
+      }
+
+      .description-text {
+        @apply text-gray-400 text-lg font-medium w-4/5;
+      }
+    }
+  }
+
+  .bottom-section {
+    .service-row {
+      @apply grid grid-cols-4 grid-flow-row gap-6;
+    }
+  }
+}

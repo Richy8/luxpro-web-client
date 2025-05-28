@@ -1,0 +1,87 @@
+a,
+.link {
+  @apply text-main-primary text-[13.75px] transition-all duration-500 ease-out no-underline cursor-pointer hover:text-main-primary-600 hover:no-underline;
+
+  &:focus {
+    .no-touch & {
+      outline: none;
+    }
+  }
+}
+
+button {
+  @apply w-auto h-auto text-center shadow-[unset] cursor-pointer outline-0 border-0;
+
+  &:focus,
+  &:visited {
+    @apply shadow-[unset] outline-0 border-0;
+  }
+  &:disabled {
+    @apply pointer-events-none cursor-not-allowed select-none;
+  }
+}
+
+.btn {
+  @apply flex text-nowrap justify-center items-center gap-x-[10px] text-base font-semibold no-underline bg-transparent shadow-[unset] transition-all duration-300 ease-in-out rounded-full relative text-center max-w-[100%] cursor-pointer border-0 hover:scale-[98%];
+
+  &:hover,
+  &:focus {
+    @apply no-underline shadow-[unset] outline-0;
+
+    .no-touch & {
+      @apply shadow-[unset] outline-0;
+    }
+  }
+
+  .btn--icon {
+    @apply text-lg;
+  }
+
+  .btn--text {
+    @apply relative;
+  }
+}
+
+.btn-sm {
+  @apply py-1.5 px-4 text-xs;
+}
+
+.btn-md {
+  @apply py-3.5 px-9 text-[15px];
+}
+
+.btn-lg {
+  @apply py-4 px-12 text-base;
+}
+
+// ===========================
+// BUTTON COLORS VARIANTS
+// ===========================
+.btn-primary {
+  @apply bg-main-primary border border-main-primary text-base-white;
+
+  &:hover,
+  &:focus {
+    @apply bg-main-primary-500 border border-main-primary-500 text-base-white;
+  }
+
+  &:disabled {
+    @apply bg-gray-50 border border-gray-50 text-gray-200;
+  }
+
+  &-outline {
+    @apply bg-transparent border border-main-primary text-main-primary;
+
+    &:hover {
+      @apply bg-main-primary border border-main-primary text-white;
+    }
+  }
+}
+
+.btn-secondary {
+  @apply bg-base-white border border-base-white text-gray-500;
+
+  &:hover {
+    @apply bg-main-primary border border-main-primary text-base-white;
+  }
+}

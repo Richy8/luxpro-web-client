@@ -1,0 +1,63 @@
+.checkout-info-card {
+  @apply w-full p-5 border border-[#E9EBED] rounded-[20px];
+
+  .image-card {
+    @apply relative rounded-2xl overflow-hidden mb-6;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .content-area {
+    @apply flex flex-col justify-start items-start gap-y-2 mb-6;
+
+    .title-text {
+      @apply text-gray-800 text-[17px] font-semibold;
+    }
+
+    .description-text {
+      @apply text-gray-300 text-[14.5px];
+    }
+  }
+
+  .discount-form {
+    @apply relative;
+
+    .btn {
+      @apply z-10 absolute right-2 top-1/2 -translate-y-1/2 rounded-full size-8 min-w-8 min-h-8;
+    }
+  }
+
+  .package-details {
+    @apply mb-7;
+
+    .title-text {
+      @apply mb-3 text-gray-800 text-[17px] font-medium;
+    }
+
+    .package-list {
+      @apply flex flex-col justify-start items-start gap-y-1;
+
+      .package-list-item {
+        @apply flex justify-between items-center gap-x-4 p-3 w-full;
+
+        .info-title {
+          @apply text-gray-300 text-base font-medium;
+        }
+
+        .info-value {
+          @apply text-gray-800 text-base font-medium;
+        }
+      }
+
+      .package-total {
+        @apply mt-1.5 px-3.5 rounded-3xl bg-[#F9F9F9] border border-[#E9EBED];
+      }
+    }
+  }
+
+  .help-text {
+    @apply text-[15px] text-gray-300;
+  }
+}

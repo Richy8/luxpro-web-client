@@ -1,0 +1,73 @@
+.dynamic-image-container {
+  @apply relative w-full h-full overflow-hidden;
+  display: block;
+
+  .dynamic-image-inner {
+    transform-origin: center center; // Default for transforms
+
+    // --- Common Hover Effect Transition ---
+    transition: filter 0.3s ease-out, transform 0.3s ease-out; // For brightness and potential scale on hover
+  }
+
+  // --- Apply the Hover Effect to the inner image ---
+  &:hover .dynamic-image-inner {
+    filter: brightness(1.1);
+  }
+}
+
+// --- Soft Zoom Animation ---
+// Applied to .dynamic-image-inner
+.animation-soft-zoom {
+  animation: softZoomInOut 15s ease-in-out infinite alternate;
+}
+
+@keyframes softZoomInOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+// --- Gentle Pan Animation ---
+// Applied to .dynamic-image-inner
+.animation-gentle-pan {
+  animation: gentlePan 18s ease-in-out infinite alternate;
+}
+
+@keyframes gentlePan {
+  0% {
+    object-position: 0% 0%;
+  }
+  25% {
+    object-position: 100% 0%;
+  }
+  50% {
+    object-position: 100% 100%;
+  }
+  75% {
+    object-position: 0% 100%;
+  }
+  100% {
+    object-position: 0% 0%;
+  }
+}
+
+// --- Subtle Float Animation ---
+// Applied to .dynamic-image-inner
+.animation-subtle-float {
+  animation: subtleFloat 8s ease-in-out infinite alternate;
+}
+
+@keyframes subtleFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

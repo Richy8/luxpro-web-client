@@ -1,0 +1,41 @@
+.lre-properties-section {
+  @apply relative mt-16 mb-[120px];
+
+  .section-container {
+    @apply flex justify-between items-start gap-x-20;
+
+    .section--left {
+      @apply w-[26%];
+
+      .property-block {
+        @apply flex flex-col justify-start items-start gap-y-10;
+
+        .property-group {
+          @apply w-full;
+
+          &--title {
+            @apply text-gray-700 text-lg font-semibold mb-4;
+          }
+
+          &--body {
+            label {
+              @apply flex justify-start items-center gap-x-3 cursor-pointer;
+
+              .text {
+                @apply text-gray-400 text-[15px];
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section--right {
+      @apply w-[62%];
+
+      .property-area {
+        @apply flex flex-col justify-start items-start gap-y-10;
+      }
+    }
+  }
+}

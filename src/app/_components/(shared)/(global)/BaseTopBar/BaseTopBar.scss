@@ -1,0 +1,69 @@
+.base-topbar {
+  @apply fixed z-30 w-full top-0 h-auto pt-9;
+
+  .topbar-row {
+    @apply flex justify-between items-center gap-x-3 h-full py-3.5 px-8 rounded-lg bg-main-grey-700/80 backdrop-blur-[30px] border border-gray-300/60 shadow-xl;
+
+    .app-logo {
+      img {
+        @apply w-[120px] h-auto;
+      }
+    }
+
+    .nav-items {
+      @apply flex justify-center items-center gap-x-14;
+
+      .nav-link {
+        @apply relative flex justify-center items-center gap-x-2 text-base-white text-base transition duration-300 ease-in-out cursor-pointer;
+
+        .icon {
+          @apply relative text-lg text-base-white transition duration-300 ease-in-out;
+        }
+
+        &:hover {
+          @apply text-main-primary;
+
+          .icon {
+            @apply text-main-primary;
+          }
+        }
+
+        &--active {
+          @apply text-main-primary font-semibold;
+        }
+      }
+    }
+
+    .topbar--right {
+      @apply flex justify-end items-center gap-x-6;
+
+      .link-text {
+        @apply text-base-white text-base;
+      }
+
+      .notification-wrapper {
+        @apply relative size-10 min-w-10 min-h-10 flex justify-center items-center cursor-pointer;
+
+        .notification-badge {
+          @apply absolute top-0 right-0 size-5 min-w-5 min-h-5 rounded-full flex justify-center items-center bg-main-primary text-base-white text-xs font-medium border border-base-white;
+        }
+
+        .icon {
+          @apply text-white text-2xl;
+        }
+      }
+
+      .user-profile {
+        @apply relative size-10 min-w-10 min-h-10 rounded-full bg-main-primary cursor-pointer transition duration-300 ease-in-out hover:bg-main-primary-500;
+
+        .icon-wrapper {
+          @apply w-full h-full flex justify-center items-center;
+        }
+
+        .icon {
+          @apply text-white text-2xl;
+        }
+      }
+    }
+  }
+}

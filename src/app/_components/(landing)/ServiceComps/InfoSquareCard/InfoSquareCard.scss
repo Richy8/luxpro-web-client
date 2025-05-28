@@ -1,0 +1,26 @@
+.info-square-card {
+  @apply flex flex-col justify-start items-center gap-y-8 w-full;
+  &:nth-of-type(2) {
+    @apply mt-20;
+  }
+
+  .image-display {
+    @apply relative w-full h-[410px] rounded-3xl overflow-hidden;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .content-area {
+    @apply flex flex-col justify-start items-center gap-y-6 w-full px-8;
+
+    .title-text {
+      @apply text-gray-800 text-[30px] leading-[40px] font-bold text-center;
+    }
+
+    .description-text {
+      @apply text-gray-400 text-lg text-center;
+    }
+  }
+}

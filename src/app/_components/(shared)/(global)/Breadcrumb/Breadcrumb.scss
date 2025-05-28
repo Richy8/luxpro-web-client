@@ -1,0 +1,39 @@
+.breadcrumb {
+  @apply relative w-full flex justify-start items-center gap-x-2 sm:gap-x-1 mb-5;
+
+  .breadcrumb-item {
+    @apply relative flex justify-start items-center gap-x-2 sm:gap-x-1.5;
+
+    .text {
+      @apply text-main-primary text-base font-medium cursor-pointer hover:text-white/70;
+    }
+
+    &.inactive-item {
+      .text {
+        @apply text-base-white cursor-not-allowed;
+      }
+    }
+  }
+
+  .breadcrumb-line {
+    @apply relative flex justify-start items-center;
+
+    .icon {
+      @apply relative rotate-180 text-base font-semibold text-main-primary;
+    }
+  }
+}
+
+.breadcrumb-dark {
+  .breadcrumb-item {
+    .text {
+      @apply hover:text-gray-300/70;
+    }
+
+    &.inactive-item {
+      .text {
+        @apply text-gray-500;
+      }
+    }
+  }
+}

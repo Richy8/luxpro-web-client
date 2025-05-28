@@ -1,0 +1,7 @@
+.base-service-section {
+  @apply bg-[#f6f0e7] z-20 py-36;
+
+  .service-row {
+    @apply grid grid-cols-4 gap-x-6 gap-y-8;
+  }
+}

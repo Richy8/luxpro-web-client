@@ -1,0 +1,55 @@
+.contact-section {
+  @apply relative pb-32;
+
+  .contact-info-section {
+    @apply mt-14 flex justify-between items-start;
+
+    .title-text {
+      @apply mb-6 text-gray-800 text-xl font-bold;
+    }
+
+    &--left {
+      @apply w-[30%];
+
+      .contact-list {
+        @apply mb-8 flex flex-col justify-start items-start gap-y-4;
+
+        &-item {
+          @apply flex justify-start items-center gap-x-2;
+
+          .icon {
+            @apply text-main-primary text-xl;
+          }
+
+          .text {
+            @apply text-gray-400/95 text-[16.5px] leading-[26px];
+          }
+        }
+      }
+
+      .contact-details {
+        @apply text-gray-400/90 text-[16.5px] leading-[26px];
+      }
+    }
+
+    &--right {
+      @apply w-[60%];
+
+      .contact-form {
+        @apply grid grid-cols-2 gap-x-6;
+
+        .form-group-base {
+          @apply col-span-2;
+        }
+
+        .form-action-row {
+          @apply col-span-2 mt-2 flex justify-between items-center gap-x-4;
+
+          .form-action-text {
+            @apply text-gray-400/85 text-[14.75px] leading-[24px] w-[45%];
+          }
+        }
+      }
+    }
+  }
+}

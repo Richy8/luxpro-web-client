@@ -1,0 +1,19 @@
+.faq-section {
+  @apply relative pt-52 pb-32;
+
+  .faq-content {
+    @apply flex justify-between items-start gap-x-16;
+
+    .left-section {
+      @apply w-[55%];
+
+      .faq-list {
+        @apply flex flex-col justify-start items-start gap-y-7;
+      }
+    }
+
+    .right-section {
+      @apply w-[28%];
+    }
+  }
+}

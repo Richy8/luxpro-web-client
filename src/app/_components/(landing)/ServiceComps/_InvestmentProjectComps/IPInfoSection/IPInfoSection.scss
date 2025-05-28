@@ -1,0 +1,27 @@
+.ip-info-section {
+  .section-title-text {
+    @apply text-center text-gray-800 text-[46px] leading-[58px] font-bold w-[45%] mx-auto;
+  }
+
+  .base-card-area {
+    @apply grid grid-cols-3 gap-6 mb-[120px];
+  }
+
+  .testimonial-carousel {
+    @apply overflow-hidden w-full py-[2rem];
+
+    .testimonial-track {
+      @apply flex gap-[2rem] w-fit animate-scroll-left will-change-transform;
+      backface-visibility: hidden;
+      animation-play-state: running;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+}

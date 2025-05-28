@@ -1,0 +1,57 @@
+.pagination {
+  @apply flex xs:flex-col justify-between xs:justify-center items-center gap-3 xs:gap-6;
+
+  &--left {
+    @apply text-neutral-700/85 text-sm;
+  }
+
+  &--right {
+    @apply flex justify-end items-center gap-x-2;
+
+    .nav {
+      @apply flex justify-center items-center gap-x-1 w-max cursor-pointer rounded-lg px-2 py-[9px] transition duration-300 ease-in-out;
+
+      svg {
+        @apply w-[18px] h-[18px] text-gray-700 transition duration-300 ease-in-out;
+      }
+
+      .text {
+        @apply text-sm text-gray-600/70 transition duration-300 ease-in-out;
+      }
+
+      &:hover {
+        svg {
+          @apply text-gray-800;
+        }
+
+        .text {
+          @apply text-gray-800;
+        }
+      }
+    }
+
+    .nav-disabled {
+      @apply cursor-not-allowed pointer-events-none opacity-60;
+    }
+
+    .page-input {
+      @apply flex justify-center items-center gap-x-2;
+
+      .page-form-input {
+        @apply w-11 h-[38px] p-2 text-center text-sm;
+      }
+
+      .page-line {
+        @apply text-gray-600/60;
+      }
+
+      .page-total {
+        @apply text-gray-700 text-[15px];
+      }
+
+      .btn {
+        @apply py-[8.5px] px-3.5 text-sm ml-1;
+      }
+    }
+  }
+}

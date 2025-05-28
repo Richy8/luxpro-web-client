@@ -1,0 +1,31 @@
+.checkout-block {
+  @apply relative pt-48;
+
+  .payment-options {
+    @apply mt-16;
+
+    .title-text {
+      @apply text-gray-600 text-[18px] font-semibold mb-4;
+    }
+
+    .option-list {
+      @apply flex flex-col justify-start items-start gap-y-6;
+
+      .option-item {
+        @apply w-full cursor-pointer py-[18px] px-5 rounded-[32px] bg-[#F9F9F9] border border-[#E9EBED] flex justify-start items-center gap-x-4 transition duration-300 ease-in-out hover:bg-main-primary/15;
+
+        .option-content {
+          @apply flex justify-start items-center gap-x-2;
+
+          img {
+            @apply h-auto;
+          }
+
+          .text {
+            @apply text-gray-400/70 text-lg font-semibold;
+          }
+        }
+      }
+    }
+  }
+}
