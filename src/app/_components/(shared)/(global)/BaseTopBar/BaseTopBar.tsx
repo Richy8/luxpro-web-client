@@ -8,6 +8,7 @@ import { LuxProLight } from "@/app/_assets";
 import {
   ProfileMenu,
   BaseNavMenu,
+  MobileNavMenu,
   ClickOutsideWrapper,
 } from "@/app/_components/(shared)";
 // import { useAuth } from "@/app/_hooks";
@@ -20,6 +21,9 @@ const BaseTopbar = () => {
   const dropdownNavRef = useRef<any>();
   const [showNavDropdown, setShowNavDropdown] = useState<boolean>(false);
 
+  const mobileNavRef = useRef<any>();
+  const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+
   const dropdownProfileRef = useRef<any>();
   const [showProfileDropdown, setShowProfileDropdown] =
     useState<boolean>(false);
@@ -27,6 +31,7 @@ const BaseTopbar = () => {
   useEffect(() => {
     setShowNavDropdown(false);
     setShowProfileDropdown(false);
+    setShowMobileNav(false);
   }, [pathname]);
 
   // const isUserAuthenticated = () => {
@@ -75,18 +80,18 @@ const BaseTopbar = () => {
               }`}
             >
               <div
-                className="nav-text"
+                className="nav-link"
                 ref={dropdownNavRef}
                 onClick={() => setShowNavDropdown(!showNavDropdown)}
               >
-                Services
-              </div>
+                <div className="nav-text">Services</div>
 
-              <div
-                className={`icon icon-caret-down ${
-                  showNavDropdown ? "rotate-180" : ""
-                }`}
-              ></div>
+                <div
+                  className={`icon icon-caret-down ${
+                    showNavDropdown ? "rotate-180" : ""
+                  }`}
+                ></div>
+              </div>
 
               {/* MENU DROPDOWN */}
               <ClickOutsideWrapper
@@ -121,15 +126,15 @@ const BaseTopbar = () => {
 
           {/* NAV OPTIONS */}
           <div className="topbar--right">
-            {/* <Link href="/login" className="link-text">
+            <Link href="/login" className="link-text">
               Login
-            </Link> */}
+            </Link>
 
             {/* NOTIFICATION */}
-            <div className="notification-wrapper">
+            {/* <div className="notification-wrapper">
               <div className="notification-badge">1</div>
               <div className="icon icon-notification"></div>
-            </div>
+            </div> */}
 
             {/* USER PROFILE */}
             <div className="user-profile">
@@ -148,6 +153,28 @@ const BaseTopbar = () => {
                 toggleDropdown={setShowProfileDropdown}
               >
                 <ProfileMenu />
+              </ClickOutsideWrapper>
+            </div>
+
+            {/* MOBILE MENU */}
+            <div className="relative">
+              <div
+                className="mobile-menu"
+                ref={mobileNavRef}
+                onClick={() => setShowMobileNav(!showMobileNav)}
+              >
+                <div className="menu-line"></div>
+                <div className="menu-line"></div>
+                <div className="menu-line menu-line--last"></div>
+              </div>
+
+              {/* MENU DROPDOWN */}
+              <ClickOutsideWrapper
+                togglerRef={mobileNavRef}
+                showDropdown={showMobileNav}
+                toggleDropdown={setShowMobileNav}
+              >
+                <MobileNavMenu />
               </ClickOutsideWrapper>
             </div>
           </div>

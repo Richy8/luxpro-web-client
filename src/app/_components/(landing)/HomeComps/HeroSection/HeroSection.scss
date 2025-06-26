@@ -75,9 +75,9 @@
     @apply absolute inset-0 z-[3];
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.3) 40%,
-      rgba(0, 0, 0, 0.3) 65%,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0.45) 40%,
+      rgba(0, 0, 0, 0.45) 65%,
       rgba(246, 240, 231, 0.45) 85%,
       rgba(246, 240, 231, 0.8) 95%,
       #f6f0e7 100%
@@ -88,28 +88,38 @@
     @apply absolute pt-12 top-0 left-1/2 -translate-x-1/2 h-full flex flex-col justify-center items-start z-[4];
 
     .users-row {
-      @apply flex justify-start items-center gap-x-4 mb-3;
+      @apply flex sm:flex-col justify-start sm:justify-center items-center sm:items-start gap-4 sm:gap-y-4 mb-3 lg:mb-5 sm:mb-8;
+
       .users-display {
         @apply relative flex justify-start items-center;
+
         .user-item {
           @apply relative size-10 min-w-10 min-h-10 rounded-full overflow-hidden border-2 border-base-white bg-main-primary flex justify-center items-center text-lg text-base-white font-medium -ml-2.5 first-of-type:ml-0;
+
           img {
             @apply w-full h-full object-cover;
           }
         }
       }
+
       .users-text {
-        @apply text-base-white font-medium text-[15px];
+        @apply text-base-white font-medium text-[15px] sm:text-[15.75px];
       }
     }
+
     .header-text {
-      @apply font-extrabold mb-4 text-[64px] leading-[72px] text-transparent;
+      @apply font-extrabold mb-4 text-[64px] lg:text-[58px] mdLg:text-[48px] sm:text-[40px] leading-[72px] lg:leading-[64px] mdLg:leading-[56px] sm:leading-[50px] text-transparent;
       background: linear-gradient(168.31deg, #ffffff 29.32%, #d2ac67 119.14%);
       background-clip: text;
       -webkit-background-clip: text;
     }
+
     .description-text {
-      @apply text-white font-medium text-lg mb-6 w-2/5 md:w-[40%] lg:w-[30%];
+      @apply text-white font-medium text-lg sm:text-[17.25px] mb-6 sm:mb-10 w-2/5 lg:w-1/2 md:w-[85%] sm:w-[92%];
+    }
+
+    .btn {
+      @apply sm:text-[15.5px] sm:px-8;
     }
   }
 }

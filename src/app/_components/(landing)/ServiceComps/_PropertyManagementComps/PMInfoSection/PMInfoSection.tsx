@@ -70,7 +70,7 @@ const PMInfoSection = () => {
         />
 
         {/* SERVICE CARDS */}
-        <div className="grid grid-cols-3 gap-6 mb-[132px]">
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-6 mb-[132px] md:mb-[100px]">
           {serviceFeaturesData.map((item, index: number) => (
             <OutlineServiceCard
               key={index}
@@ -82,8 +82,8 @@ const PMInfoSection = () => {
         </div>
 
         {/* WHY SECTION */}
-        <div className="flex justify-between items-center mb-[132px]">
-          <div className="relative overflow-hidden rounded-3xl w-[45%]">
+        <div className="flex md:flex-col justify-between md:justify-start items-center md:items-start mb-[132px] md:mb-[120px] md:gap-y-16">
+          <div className="relative overflow-hidden rounded-3xl md:rounded-2xl w-[45%] md:w-full md:h-[380px]">
             <Image
               src={PMImageOne}
               alt="property-management"
@@ -91,8 +91,8 @@ const PMInfoSection = () => {
             />
           </div>
 
-          <div className="w-[45%] flex flex-col justify-center items-start">
-            <div className="text-gray-800 text-[40px] leading-[50px] font-bold">
+          <div className="w-[45%] md:w-full flex flex-col justify-center items-start">
+            <div className="text-gray-800 text-[40px] lg:text-[36px] md:text-[32px] sm:text-[28px] leading-[50px] lg:leading-[48px] md:leading-[42px] sm:leading-[40px] font-bold">
               Why Choose Our{" "}
               <span className="text-main-primary">Property Management</span>{" "}
               Services

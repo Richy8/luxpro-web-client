@@ -1,5 +1,5 @@
 .service-card {
-  @apply relative w-full h-[400px] rounded-xl overflow-hidden transition-all duration-300 ease-in-out hover:scale-[97%];
+  @apply relative w-full h-[400px] sm:h-[440px] rounded-xl overflow-hidden transition-all duration-300 ease-in-out hover:scale-[97%];
 
   .image-container {
     @apply relative w-full h-full;
@@ -26,19 +26,19 @@
     @apply absolute z-10 bottom-0 left-0 w-full flex flex-col justify-start items-start gap-y-4 px-4 py-5;
 
     .title-text {
-      @apply text-base-white font-bold text-lg -mb-2;
+      @apply text-base-white font-bold text-lg sm:text-[22px] -mb-2;
     }
 
     .description-text {
-      @apply text-base-white/80 font-medium text-sm mb-1.5;
+      @apply text-base-white/80 font-medium text-sm sm:text-[16.5px] sm:leading-[25px] mb-1.5;
     }
   }
 }
 
 .service-card-lg {
-  @apply h-[520px];
+  @apply h-[520px] md:h-[440px] sm:h-[460px];
 
   .bottom-copy {
-    @apply p-8;
+    @apply p-8 md:p-6 sm:px-5;
   }
 }

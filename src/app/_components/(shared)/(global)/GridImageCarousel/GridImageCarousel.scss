@@ -1,8 +1,8 @@
 .grid-image-carousel {
-  @apply flex justify-between items-start gap-6 h-[580px];
+  @apply flex mdLg:flex-col justify-between mdLg:justify-start items-start gap-6 lg:gap-4 h-[580px] lg:h-[500px] mdLg:h-auto;
 
   .primary-card {
-    @apply relative rounded-3xl overflow-hidden h-full w-[67%] bg-gray-100/50;
+    @apply relative rounded-3xl lg:rounded-[18px] sm:rounded-2xl overflow-hidden h-full mdLg:h-[480px] md:h-[440px] sm:h-[380px] xs:h-[270px] w-[67%] mdLg:w-full bg-gray-100/50;
 
     .image-carousel {
       @apply h-full flex; // Use flex to lay out images horizontally
@@ -27,19 +27,19 @@
     }
 
     .control {
-      @apply absolute size-11 min-w-11 min-h-11 top-1/2 -translate-y-1/2 rounded-full overflow-hidden cursor-pointer z-20 backdrop-blur-[20px] flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-main-primary/65;
+      @apply absolute size-11 sm:size-9 min-w-11 sm:min-w-9 min-h-11 sm:min-h-9 top-1/2 -translate-y-1/2 rounded-full overflow-hidden cursor-pointer z-20 backdrop-blur-[20px] flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-main-primary/65;
       background: rgba(129, 130, 133, 0.35);
 
       .icon {
-        @apply relative text-white font-medium text-xl;
+        @apply relative text-white font-medium text-xl sm:text-lg;
       }
 
       &-left {
-        @apply left-9;
+        @apply left-9 sm:left-4;
       }
 
       &-right {
-        @apply right-9;
+        @apply right-9 sm:right-4;
 
         .icon {
           @apply rotate-180;
@@ -71,10 +71,10 @@
   }
 
   .secondary-card {
-    @apply h-full w-[33%] flex flex-col justify-between items-start gap-6;
+    @apply h-full mdLg:h-[280px] md:h-[220px] xs:h-[120px] w-[33%] mdLg:w-full flex flex-col mdLg:flex-row sm:hidden justify-between items-start gap-6 lg:gap-4;
 
     &-display {
-      @apply relative rounded-3xl overflow-hidden w-full h-1/2 bg-gray-100/50;
+      @apply relative rounded-3xl lg:rounded-[18px] sm:rounded-2xl overflow-hidden w-full h-1/2 mdLg:h-full bg-gray-100/50;
     }
 
     &.fading-out {

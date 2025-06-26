@@ -40,7 +40,7 @@ const GlobalEventCheckout = () => {
     <>
       <CheckoutBlock pagePath={getPagePath} details={globalEvent} />
 
-      <div className="mt-24">
+      <div className="mt-10 md:-mt-14 sm:-mt-20">
         <GEEventSection title="Explore Other Global Events Packages" />
       </div>
 

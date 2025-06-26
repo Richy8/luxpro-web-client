@@ -5,7 +5,6 @@ import {
   MagnifyingGlassIcon,
   EyeIcon,
   EyeSlashIcon,
-  CalendarDaysIcon,
   ClockIcon,
 } from "@heroicons/react/24/outline";
 import {
@@ -19,10 +18,10 @@ import "./TextInputField.scss";
 const TextInputField = ({
   labelId,
   labelTitle,
+  inputStyle,
   inputType = IInputType.Text,
   inputPlaceholder = "",
   inputValue = "",
-  inputBaseColor = "bg-white",
   isTextArea = false,
   isRequired = false,
   isDisabled = false,
@@ -156,11 +155,11 @@ const TextInputField = ({
     <div
       className={`form-block form-text-block ${
         hasBottomPadding ? "mb-8" : "mb-0"
-      }`}
+      } ${inputStyle ? inputStyle : ""}`}
     >
       {/* LABEL TEXT */}
       {labelTitle && (
-        <label htmlFor={labelId} className={`form-label ${inputBaseColor}`}>
+        <label htmlFor={labelId} className={`form-label`}>
           {labelTitle}
         </label>
       )}
@@ -200,11 +199,15 @@ const TextInputField = ({
                 className="suffix-item"
                 onClick={() => setIsHidden(!isHidden)}
               >
-                {isHidden ? (
-                  <EyeIcon className="suffix-icon" />
-                ) : (
-                  <EyeSlashIcon className="suffix-icon" />
-                )}
+                <div
+                  className={`suffix-icon ${
+                    isHidden ? "icon-eye" : "icon-eye-slash"
+                  } ${
+                    inputStyle === "glass-effect-style"
+                      ? "!text-base-background"
+                      : "!text-gray-400/80"
+                  }`}
+                ></div>
               </div>
             )}
 

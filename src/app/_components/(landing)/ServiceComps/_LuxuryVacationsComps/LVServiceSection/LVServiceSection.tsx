@@ -44,12 +44,12 @@ const LVServiceSection = ({ title }: { title?: string }) => {
     <div className="lv-service-section">
       <div className="base-container">
         {title && (
-          <div className="text-gray-600 mb-12 font-bold text-[44px]">
+          <div className="text-gray-600 mb-12 sm:mb-9 font-bold text-[44px] lg:text-[34px] md:text-[30px] sm:text-[29px]">
             {title}
           </div>
         )}
 
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 mdLg:grid-cols-2 sm:grid-cols-1 gap-6 md:gap-4 sm:gap-8">
           {serviceList.map((service, index) => (
             <ServiceCard key={index} {...service} cardHeight="lg" />
           ))}

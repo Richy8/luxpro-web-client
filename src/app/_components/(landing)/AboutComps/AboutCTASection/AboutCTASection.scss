@@ -2,18 +2,18 @@
   @apply relative my-6;
 
   .cta-card {
-    @apply w-full h-auto rounded-3xl overflow-hidden bg-[#f8f0e3] px-20 py-[75px] flex flex-col justify-center items-center;
+    @apply w-full h-auto rounded-3xl overflow-hidden bg-[#f8f0e3] px-20 sm:px-12 xs:px-9 py-[75px] lg:py-[64px] mdLg:py-[58px] sm:py-[48px] flex flex-col justify-center items-center;
 
     .title-text {
-      @apply text-gray-800 text-5xl leading-[56px] font-bold text-center mb-6 w-2/5;
+      @apply text-gray-800 text-5xl lg:text-4xl mdLg:text-[31px] sm:text-[28px] xs:text-[26px] leading-[56px] lg:leading-[48px] mdLg:leading-[44px] sm:leading-10 xs:leading-9 font-bold text-center mb-6 w-2/5 xl:w-1/2 mdLg:w-3/5 sm:w-[90%];
     }
 
     .description-text {
-      @apply text-gray-400 text-lg text-center mb-10 w-1/2;
+      @apply text-gray-400 text-lg mdLg:text-[17px] sm:text-[17px] sm:leading-[30px] text-center mb-10 w-1/2 lg:w-3/5 mdLg:w-3/4 sm:w-[98%];
     }
 
     .btn-row {
-      @apply flex justify-center items-center gap-x-6;
+      @apply flex sm:flex-col justify-center items-center gap-6;
     }
   }
 }

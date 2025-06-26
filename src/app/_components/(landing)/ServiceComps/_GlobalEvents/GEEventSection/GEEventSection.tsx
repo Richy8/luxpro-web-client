@@ -46,12 +46,12 @@ const GEEventSection = ({ title }: { title?: string }) => {
     <div className="ge-service-section">
       <div className="base-container">
         {title && (
-          <div className="text-gray-600 mb-12 font-bold text-[44px]">
+          <div className="text-gray-600 mb-12 md:mb-10 font-bold text-[44px] lg:text-[40px] md:text-[30px] sm:text-[24px] lg:leading-[48px] md:leading-[40px] sm:leading-[34px]">
             {title}
           </div>
         )}
 
-        <div className="grid grid-cols-3 gap-6 mb-[140px]">
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-6 mb-[120px] md:mb-[100px] sm:mb-[60px]">
           {serviceList.map((service, index) => (
             <ServiceCard
               key={index}

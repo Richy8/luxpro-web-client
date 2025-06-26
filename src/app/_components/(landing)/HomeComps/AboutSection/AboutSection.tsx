@@ -16,7 +16,7 @@ const AboutSection = () => {
 
           <div className="description-text">
             Experience world-class luxury with seamless service, personalized
-            travel, and premium comfort — crafted for those who expect the best.
+            travel, and premium comfort, crafted for those who expect the best.
           </div>
         </div>
 

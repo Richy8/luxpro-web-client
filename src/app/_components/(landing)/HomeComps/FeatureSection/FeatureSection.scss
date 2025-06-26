@@ -1,34 +1,34 @@
 .feature-section {
   .top-section {
-    @apply pt-[120px] pb-24 flex flex-col justify-start items-center gap-y-4 w-2/5 mx-auto;
+    @apply pt-[120px] lg:pt-[100px] xs:pt-[90px] pb-24 lg:pb-16 flex flex-col justify-start items-center gap-y-4 w-2/5 xl:w-1/2 lg:w-[55%] md:w-[70%] sm:w-[80%] xs:w-[92%] mx-auto;
 
     .title-text {
-      @apply text-gray-800 text-5xl leading-[56px] font-bold text-center;
+      @apply text-gray-800 text-5xl lg:text-[40px] mdLg:text-[36px] sm:text-[32px] xs:text-[30px] leading-[56px] lg:leading-[50px] mdLg:leading-[48px] sm:leading-[44px] xs:leading-[40px] font-bold text-center;
     }
 
     .description-text {
-      @apply text-gray-400 text-lg font-medium text-center;
+      @apply text-gray-400 text-lg lg:text-[17px] sm:text-[16.5px] font-medium text-center;
     }
   }
 
   .bottom-section {
-    @apply pb-[120px] grid grid-cols-2 gap-x-10 px-[76px];
+    @apply pb-[120px] md:pb-[100px] grid grid-cols-2 md:grid-cols-1 gap-x-10 mdLg:gap-x-8 md:gap-y-20 px-[76px] xl:px-[10px] lg:px-0;
 
     .feature-item {
       .feature-item-content {
-        @apply flex flex-col justify-start items-start first-of-type:mb-24 last-of-type:mt-16;
+        @apply flex flex-col justify-start items-start first-of-type:mb-24 mdLg:first-of-type:mb-16 last-of-type:mt-16 mdLg:last-of-type:mt-12;
 
         .feature-item-title {
-          @apply text-gray-800 text-[40px] font-bold mb-2.5;
+          @apply text-gray-800 text-[40px] lg:text-[34px] mdLg:text-[30px] sm:text-[26px] xs:text-[24.5px] font-bold mb-2.5;
         }
 
         .feature-item-description {
-          @apply text-gray-400/90 text-[17.75px] leading-[28px] pr-14 mb-7;
+          @apply text-gray-400/90 text-[17.75px] lg:text-[16.75px] mdLg:text-[16.45px] leading-[28px] md:leading-[27.5px] pr-14 mdLg:pr-4 md:pr-0 mb-7;
         }
       }
 
       .feature-image {
-        @apply w-full h-[680px] overflow-hidden rounded-3xl;
+        @apply w-full h-[680px] mdLg:h-[610px] sm:h-[580px] xs:h-[440px] overflow-hidden rounded-3xl;
 
         img {
           @apply w-full h-full object-cover;

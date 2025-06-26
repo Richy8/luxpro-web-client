@@ -1,0 +1,39 @@
+.mobile-nav-menu {
+  @apply absolute z-30 top-[50px] -left-full md:left-[unset] md:-right-8 sm:-right-6 xs:-right-5 w-[280px] md:w-[93vw] xs:w-[92vw] h-auto backdrop-blur-[36px] md:backdrop-blur-[42px] bg-gradient-to-b from-[rgba(73,73,73,0.65)] md:from-[rgba(73,73,73,0.8)] to-[rgba(51,50,50,0.65)] md:to-[rgba(51,50,50,0.8)] rounded-xl sm:rounded-[10px] shadow-lg animate-slide-down max-h-[86vh] overflow-y-auto;
+
+  .menu-wrapper {
+    @apply relative z-30 flex flex-col justify-start items-start gap-y-8 py-8 px-6 after:absolute after:hidden after:size-3 after:right-1/2 after:-top-1.5 after:bg-[#818285] after:-z-10 after:rotate-45 backdrop-blur-[54px] rounded-xl;
+
+    .nav-list {
+      @apply flex flex-col justify-start items-start gap-y-6 md:gap-y-8 w-full;
+
+      &-item {
+        @apply relative cursor-pointer flex justify-between items-center gap-x-4 w-full text-base-white font-medium hover:text-main-primary;
+
+        &-left {
+          @apply flex justify-start items-center gap-x-3.5;
+        }
+
+        .nav-dropdown-icon {
+          @apply relative text-xl font-medium transition duration-300 ease-in-out;
+        }
+      }
+
+      .sub-menu-list {
+        @apply relative -mt-0.5 mb-2 flex flex-col justify-start items-start gap-y-8 w-full pl-8 animate-slide-down;
+
+        &-item {
+          @apply cursor-pointer flex justify-start items-center gap-x-3.5 w-full text-base-white font-medium hover:text-main-primary;
+        }
+      }
+
+      .nav-icon {
+        @apply text-[22px] transition duration-300 ease-in-out;
+      }
+
+      .nav-text {
+        @apply text-base transition duration-300 ease-in-out sm:text-[16.5px];
+      }
+    }
+  }
+}

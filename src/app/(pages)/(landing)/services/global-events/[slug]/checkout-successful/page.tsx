@@ -39,10 +39,11 @@ const GlobalEventCheckoutSuccess = () => {
         pageDescription={
           <>
             {" "}
-            <div className="description-details flex flex-col gap-y-5 mt-8 text-gray-400 text-lg mb-10">
+            <div className="description-details sm:text-[16.45px] flex flex-col gap-y-5 mt-8 sm:mt-6 text-gray-400 text-lg mb-10">
               <div>
                 Thank you for booking your global event experience with us.
               </div>
+
               <div>
                 What happens next? <br /> Our event consultant will contact you
                 within 24 hours to confirm your booking details and assist with
@@ -52,7 +53,7 @@ const GlobalEventCheckoutSuccess = () => {
               </div>
               <div>Booking Reference: LUX-4480</div>
 
-              <div className="flex justify-between items-start gap-x-4">
+              <div className="flex md:flex-col justify-between md:justify-start items-start md:items-start gap-x-4 md:gap-y-5">
                 <div className="w-1/2">
                   <div className="font-semibold text-gray-800 mb-4">
                     Your Information

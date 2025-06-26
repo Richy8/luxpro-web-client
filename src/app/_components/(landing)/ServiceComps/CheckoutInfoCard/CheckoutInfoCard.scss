@@ -1,5 +1,5 @@
 .checkout-info-card {
-  @apply w-full p-5 border border-[#E9EBED] rounded-[20px];
+  @apply w-full p-5 lg:p-3.5 border border-[#E9EBED] rounded-[20px] sm:rounded-2xl;
 
   .image-card {
     @apply relative rounded-2xl overflow-hidden mb-6;
@@ -13,11 +13,11 @@
     @apply flex flex-col justify-start items-start gap-y-2 mb-6;
 
     .title-text {
-      @apply text-gray-800 text-[17px] font-semibold;
+      @apply text-gray-800 text-[17px] sm:text-xl font-semibold;
     }
 
     .description-text {
-      @apply text-gray-300 text-[14.5px];
+      @apply text-gray-300 text-[14.5px] sm:text-base;
     }
   }
 

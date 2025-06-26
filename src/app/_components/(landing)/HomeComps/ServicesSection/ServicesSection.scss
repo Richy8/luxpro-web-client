@@ -1,25 +1,25 @@
 .services-section {
-  @apply py-16;
+  @apply py-16 lg:py-12;
 
   .top-section {
-    @apply flex justify-between items-end gap-x-6 mb-20;
+    @apply flex sm:flex-col justify-between sm:justify-start items-end sm:items-start gap-x-6 sm:gap-y-8 mb-20;
 
     .top-content {
-      @apply w-1/2;
+      @apply w-1/2 lg:w-3/5 md:w-[70%] sm:w-[90%] xs:w-full;
 
       .title-text {
-        @apply text-gray-800 text-5xl leading-[56px] font-bold mb-4;
+        @apply text-gray-800 text-5xl lg:text-[40px] mdLg:text-[36px] sm:text-[32px] xs:text-[30px] leading-[56px] lg:leading-[50px] mdLg:leading-[48px] sm:leading-[44px] xs:leading-[40px] font-bold mb-4;
       }
 
       .description-text {
-        @apply text-gray-400 text-lg font-medium w-4/5;
+        @apply text-gray-400/90 text-lg lg:text-[17px] sm:text-[16.75px] font-medium w-4/5 lg:w-[90%] mdLg:w-full;
       }
     }
   }
 
   .bottom-section {
     .service-row {
-      @apply grid grid-cols-4 grid-flow-row gap-6;
+      @apply grid grid-cols-4 mdLg:grid-cols-2 sm:grid-cols-1 grid-flow-row gap-6 lg:gap-3 mdLg:gap-8 md:gap-6;
     }
   }
 }

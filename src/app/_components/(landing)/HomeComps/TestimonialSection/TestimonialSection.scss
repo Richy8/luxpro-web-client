@@ -2,10 +2,10 @@
   @apply bg-main-grey-800/95 py-28;
 
   .top-section {
-    @apply mb-20;
+    @apply mb-20 lg:mb-16;
 
     .title-text {
-      @apply text-base-white text-center mx-auto text-5xl font-bold w-1/2;
+      @apply text-base-white text-center mx-auto text-5xl lg:text-[40px] mdLg:text-[36px] sm:text-[32px] xs:text-[28px] leading-[56px] lg:leading-[50px] mdLg:leading-[48px] sm:leading-[44px] xs:leading-[40px] font-bold w-1/2 mdLg:w-[65%] sm:w-[84%] xs:w-[92%];
     }
   }
 
@@ -14,7 +14,7 @@
       @apply overflow-hidden w-full py-[2rem];
 
       .testimonial-track {
-        @apply flex gap-[2rem] w-fit animate-scroll-left will-change-transform;
+        @apply flex gap-[2rem] lg:gap-[1.25rem] w-fit animate-scroll-left will-change-transform;
         backface-visibility: hidden;
         animation-play-state: running;
 

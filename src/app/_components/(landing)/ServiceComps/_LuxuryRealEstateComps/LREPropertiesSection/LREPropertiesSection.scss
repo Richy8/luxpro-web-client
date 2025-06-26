@@ -1,11 +1,11 @@
 .lre-properties-section {
-  @apply relative mt-16 mb-[120px];
+  @apply relative mt-16 mb-[120px] lg:mb-[80px] mdLg:mb-[10px];
 
   .section-container {
-    @apply flex justify-between items-start gap-x-20;
+    @apply flex mdLg:flex-col justify-between mdLg:justify-start items-start gap-x-20 mdLg:gap-y-20;
 
     .section--left {
-      @apply w-[26%];
+      @apply w-[26%] mdLg:w-full;
 
       .property-block {
         @apply flex flex-col justify-start items-start gap-y-10;
@@ -31,7 +31,7 @@
     }
 
     .section--right {
-      @apply w-[62%];
+      @apply w-[62%] mdLg:w-full;
 
       .property-area {
         @apply flex flex-col justify-start items-start gap-y-10;

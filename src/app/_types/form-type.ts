@@ -23,6 +23,8 @@ export interface IInputValidator {
 export interface ITextInputField {
   labelId?: string;
   labelTitle?: string;
+  labelStyle?: string;
+  inputStyle?: string;
   inputType: IInputType;
   inputValue?: string | number;
   inputPlaceholder?: string;

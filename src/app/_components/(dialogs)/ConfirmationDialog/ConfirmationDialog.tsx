@@ -18,7 +18,7 @@ const ConfirmationDialog = ({
   showModal,
   toggleModal,
   modalSize = "modal-md",
-  modalBodySize = "w-4/5",
+  modalBodySize = "w-4/5 sm:w-[88%]",
   titleText,
   bodyText,
   buttonText,

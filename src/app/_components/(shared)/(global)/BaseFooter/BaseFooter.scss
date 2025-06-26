@@ -2,24 +2,24 @@
   @apply relative;
 
   .footer--top {
-    @apply pt-[120px] pb-[96px];
+    @apply pt-[120px] sm:pt-[70px] pb-[96px] sm:pb-[70px];
 
     &--container {
-      @apply flex justify-between items-start gap-x-5;
+      @apply flex mdLg:flex-wrap justify-between items-start gap-5 lg:gap-7 mdLg:gap-20;
 
       &--left {
-        @apply w-[28%] flex flex-col justify-start items-start;
+        @apply w-[28%] lg:w-[32%] mdLg:w-3/4 md:w-full flex flex-col justify-start items-start;
 
         .app-logo {
           @apply mb-4;
 
           img {
-            @apply w-[160px] h-auto;
+            @apply w-[160px] md:w-[140px] sm:w-[130px] h-auto;
           }
         }
 
         .app-bio {
-          @apply mb-6 text-gray-300 text-[17px] leading-7;
+          @apply mb-6 text-gray-300 text-[17px] sm:text-lg leading-7 sm:leading-8;
         }
 
         .app-socials {
@@ -36,13 +36,13 @@
       }
 
       &--right {
-        @apply w-[60%] flex justify-end items-start gap-x-24;
+        @apply w-[60%] lg:w-[58%] mdLg:w-4/5 md:w-full flex sm:flex-wrap justify-end mdLg:justify-between sm:justify-start items-start gap-x-24 lg:gap-x-14 sm:gap-y-16;
 
         .nav-column {
           @apply flex flex-col justify-start items-start gap-y-6;
 
           .nav-title {
-            @apply text-gray-200 text-base font-semibold text-nowrap;
+            @apply text-gray-200 text-base sm:text-[17px] font-semibold text-nowrap;
           }
 
           .nav-list {
@@ -50,7 +50,7 @@
 
             .nav-list-item,
             .nav-list-link {
-              @apply text-base font-medium text-gray-500 text-nowrap;
+              @apply text-base sm:text-[16.75px] font-medium text-gray-500 text-nowrap;
             }
 
             .nav-list-link {
@@ -66,17 +66,17 @@
     @apply pb-16;
 
     &--container {
-      @apply flex justify-between items-center gap-x-5;
+      @apply flex sm:flex-row-reverse sm:flex-wrap justify-between sm:justify-center items-center gap-5 sm:gap-6;
 
       &--left {
-        @apply text-base text-gray-300;
+        @apply text-base text-gray-400 sm:order-2;
       }
 
       &--right {
-        @apply flex justify-end items-center gap-x-4 text-gray-300;
+        @apply flex justify-end sm:justify-center items-center gap-x-4 text-gray-400 sm:order-1;
 
         .base-item-link {
-          @apply text-base text-gray-300 transition duration-300 ease-in-out hover:text-main-primary;
+          @apply text-base sm:text-[16.75px] text-gray-400 transition duration-300 ease-in-out hover:text-main-primary;
         }
       }
     }

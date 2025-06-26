@@ -19,7 +19,11 @@ const PageInfoRow: React.FC<IPageInfoRowProps> = ({
   children,
 }) => {
   return (
-    <div className={`page-info-row ${hasTopMargin ? "pt-52" : ""}`}>
+    <div
+      className={`page-info-row ${
+        hasTopMargin ? "pt-52 md:pt-44 sm:pt-40 xs:pt-36" : ""
+      }`}
+    >
       {/* Ensure Breadcrumb component can handle the theme prop if it's meant to */}
       <Breadcrumb items={pagePath} theme="dark" />
 

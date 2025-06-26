@@ -1,8 +1,8 @@
 .et-service-row {
-  @apply flex justify-between items-center gap-x-16 mb-24 last-of-type:mb-0;
+  @apply flex md:flex-col justify-between md:justify-start items-center md:items-start gap-x-16 lg:gap-x-10 md:gap-y-16 sm:gap-y-14 mb-24 sm:mb-20 last-of-type:mb-0;
 
   .image-display-block {
-    @apply relative w-[52%] h-[680px] overflow-hidden rounded-3xl bg-gray-200;
+    @apply relative w-[52%] md:w-full h-[680px] lg:h-[600px] sm:h-[400px] xs:h-[360px] overflow-hidden rounded-3xl sm:rounded-2xl bg-gray-200;
 
     img {
       @apply w-full h-full object-cover;
@@ -10,10 +10,10 @@
   }
 
   .content-block {
-    @apply w-[42%];
+    @apply w-[42%] lg:w-[46%] md:w-full;
 
     .package-title {
-      @apply text-gray-800 text-[40px] font-bold mb-3;
+      @apply text-gray-800 text-[40px] lg:text-[34px] md:text-[30px] sm:text-[26px] font-bold mb-3;
     }
 
     .package-description {
@@ -21,39 +21,15 @@
     }
 
     .package-amount {
-      @apply text-main-primary text-[28px] font-bold mb-7;
+      @apply text-main-primary text-[28px] lg:text-[26px] font-bold mb-7 lg:mb-5;
     }
 
     .package-features {
       @apply flex flex-col justify-start items-start gap-y-2;
-
-      .package-features-title {
-        @apply text-gray-800 text-[19px] font-bold mb-2.5;
-      }
-
-      .package-features-list {
-        @apply flex flex-col justify-start items-start gap-y-4;
-
-        .package-features-list-item {
-          @apply flex justify-start items-center gap-x-3;
-
-          .icon-wrapper {
-            @apply size-8 min-w-8 min-h-8 rounded-full border border-[#dbdcde]/60 flex justify-center items-center;
-
-            .icon {
-              @apply text-xl;
-            }
-          }
-
-          .text {
-            @apply text-gray-400 font-medium text-lg;
-          }
-        }
-      }
     }
   }
 }
 
 .et-service-row.even {
-  @apply flex-row-reverse;
+  @apply flex-row-reverse md:flex-col;
 }

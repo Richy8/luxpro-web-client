@@ -23,7 +23,7 @@ const ETServiceInfoSection = () => {
         />
 
         {/* BASE SECTION */}
-        <div className="base-section mt-8 pb-[100px] mb-[120px]">
+        <div className="base-section mt-8 pb-[100px] sm:pb-[80px] mb-[120px] sm:mb-[100px]">
           {getAllExecutiveTravels().map((service, index) => (
             <ETServiceRow key={index} itemNo={index} serviceItem={service} />
           ))}

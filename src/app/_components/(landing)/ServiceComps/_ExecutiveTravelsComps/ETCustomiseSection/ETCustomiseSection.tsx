@@ -37,7 +37,7 @@ const ETCustomiseSection = () => {
                   { itemText: "Custom Package", itemLink: "#" },
                 ]}
                 title={
-                  <div className="w-4/5">
+                  <div className="w-4/5 md:w-full">
                     Customize Your Luxury Travel Package
                   </div>
                 }
@@ -104,7 +104,7 @@ const ETCustomiseSection = () => {
                   onSelectChange={(value) => console.log(value)}
                 />
 
-                <div className="grid grid-cols-2 gap-x-6">
+                <div className="grid grid-cols-2 sm:grid-cols-1 gap-x-6">
                   <TextInputField
                     labelId="checkIn"
                     labelTitle="Check In"

@@ -1,11 +1,11 @@
 .info-data-card-row {
-  @apply flex justify-between items-center gap-x-14;
+  @apply flex md:flex-col justify-between md:justify-start items-center md:items-start gap-x-14 lg:gap-x-10 md:gap-y-12;
 
   .content-area {
-    @apply w-2/5 flex flex-col justify-start items-start gap-y-6;
+    @apply w-2/5 lg:w-[48%] md:w-full flex flex-col justify-start items-start gap-y-6;
 
     .title-text {
-      @apply text-gray-800 text-5xl leading-[58px] font-bold;
+      @apply text-gray-800 text-5xl lg:text-[32px] sm:text-[29px] leading-[56px] lg:leading-[48px] sm:leading-[40px] xs:leading-[40px] font-bold;
     }
 
     .subtitle-text {
@@ -13,12 +13,12 @@
     }
 
     .description-text {
-      @apply text-gray-400 text-lg mb-2;
+      @apply text-gray-400 text-lg lg:text-[17px] mb-2 sm:-mt-1;
     }
   }
 
   .image-display {
-    @apply relative w-1/2 h-[660px] rounded-3xl overflow-hidden;
+    @apply relative w-1/2 md:w-full h-[660px] lg:h-[520px] md:h-[400px] sm:h-[360px] xs:h-[280px] rounded-3xl md:rounded-2xl overflow-hidden;
 
     img {
       @apply w-full h-full object-cover;
@@ -26,34 +26,38 @@
   }
 
   &:nth-of-type(even) {
-    @apply flex-row-reverse;
+    @apply flex-row-reverse md:flex-col;
   }
 }
 
 .info-data-card-row--sm {
-  @apply gap-x-10;
+  @apply gap-x-10 lg:gap-x-8 md:gap-y-8;
 
   .image-display {
-    @apply relative w-[45%] h-[350px] rounded-3xl overflow-hidden;
+    @apply relative w-[45%] lg:w-[42%] md:w-full h-[350px] lg:h-[300px] sm:h-[220px] rounded-3xl mdLg:rounded-2xl overflow-hidden;
   }
 
   .content-area {
-    @apply w-[48%] gap-y-4;
+    @apply w-[48%] lg:w-[54%] md:w-full gap-y-4 lg:gap-y-3.5 md:mb-8 sm:mb-4;
 
     .title-text {
-      @apply text-[28px] leading-[40px] font-semibold;
+      @apply text-[28px] lg:text-[22px] leading-[40px] lg:leading-[32px] font-semibold;
     }
 
     .subtitle-text {
-      @apply text-lg font-medium;
+      @apply text-lg lg:text-[17.5px] font-medium;
     }
 
     .description-text {
-      @apply text-[16.5px] leading-[26px] mb-2;
+      @apply text-[16.5px] lg:text-[16px] leading-[26px] mb-2;
     }
   }
 
   &:nth-of-type(even) {
-    @apply flex-row;
+    @apply flex-row md:flex-col;
+  }
+
+  &:last-of-type {
+    @apply md:-mb-14;
   }
 }

@@ -1,20 +1,20 @@
 .base-topbar {
-  @apply fixed z-30 w-full top-0 h-auto pt-9;
+  @apply fixed z-30 w-full top-0 h-auto pt-9 lg:pt-7;
 
   .topbar-row {
-    @apply flex justify-between items-center gap-x-3 h-full py-3.5 px-8 rounded-lg bg-main-grey-700/80 backdrop-blur-[30px] border border-gray-300/60 shadow-xl;
+    @apply flex justify-between items-center gap-x-3 h-full py-3.5 px-8 sm:px-6 xs:px-[18px] rounded-lg bg-main-grey-700/80 backdrop-blur-[30px] border border-gray-300/60 shadow-xl;
 
     .app-logo {
       img {
-        @apply w-[120px] h-auto;
+        @apply w-[120px] lg:w-[105px] mdLg:w-[95px] sm:w-[80px] h-auto;
       }
     }
 
     .nav-items {
-      @apply flex justify-center items-center gap-x-14;
+      @apply flex justify-center items-center gap-x-14 lg:gap-x-10 mdLg:gap-x-8 md:hidden;
 
       .nav-link {
-        @apply relative flex justify-center items-center gap-x-2 text-base-white text-base transition duration-300 ease-in-out cursor-pointer;
+        @apply relative flex justify-center items-center gap-x-2 text-base-white text-base mdLg:text-[15.5px] transition duration-300 ease-in-out cursor-pointer;
 
         .icon {
           @apply relative text-lg text-base-white transition duration-300 ease-in-out;
@@ -35,7 +35,7 @@
     }
 
     .topbar--right {
-      @apply flex justify-end items-center gap-x-6;
+      @apply flex justify-end items-center gap-x-6 sm:gap-x-4;
 
       .link-text {
         @apply text-base-white text-base;
@@ -54,14 +54,32 @@
       }
 
       .user-profile {
-        @apply relative size-10 min-w-10 min-h-10 rounded-full bg-main-primary cursor-pointer transition duration-300 ease-in-out hover:bg-main-primary-500;
+        @apply relative size-10 xs:size-9 min-w-10 xs:min-w-9 min-h-10 xs:min-h-9 rounded-full bg-main-primary cursor-pointer transition duration-300 ease-in-out hover:bg-main-primary-500;
 
         .icon-wrapper {
           @apply w-full h-full flex justify-center items-center;
         }
 
         .icon {
-          @apply text-white text-2xl;
+          @apply text-white text-2xl xs:text-xl;
+        }
+      }
+
+      .mobile-menu {
+        @apply min-w-[30px] xs:min-w-[28px] min-h-[22px] xs:min-h-[20px] flex-col justify-between items-start cursor-pointer hidden md:flex;
+
+        .menu-line {
+          @apply w-full h-[2px] bg-base-white transition-all duration-300 ease-in-out;
+
+          &--last {
+            @apply w-4/5;
+          }
+        }
+
+        &:hover {
+          .menu-line {
+            @apply bg-main-primary;
+          }
         }
       }
     }

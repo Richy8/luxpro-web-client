@@ -1,15 +1,15 @@
 .contact-section {
-  @apply relative pb-32;
+  @apply relative pb-32 md:pb-24 sm:pb-20;
 
   .contact-info-section {
-    @apply mt-14 flex justify-between items-start;
+    @apply mt-14 flex md:flex-col justify-between md:justify-start items-start md:gap-y-20;
 
     .title-text {
-      @apply mb-6 text-gray-800 text-xl font-bold;
+      @apply mb-6 md:mb-8 text-gray-800 text-xl sm:text-[17.75px] font-bold;
     }
 
     &--left {
-      @apply w-[30%];
+      @apply w-[30%] mdLg:w-[34%] md:w-full md:order-2;
 
       .contact-list {
         @apply mb-8 flex flex-col justify-start items-start gap-y-4;
@@ -22,31 +22,35 @@
           }
 
           .text {
-            @apply text-gray-400/95 text-[16.5px] leading-[26px];
+            @apply text-gray-400/95 text-[16.5px] mdLg:text-[16px] leading-[26px];
           }
         }
       }
 
       .contact-details {
-        @apply text-gray-400/90 text-[16.5px] leading-[26px];
+        @apply text-gray-400/90 text-[16.5px] mdLg:text-[16px] leading-[26px];
       }
     }
 
     &--right {
-      @apply w-[60%];
+      @apply w-[60%] md:order-1 md:w-full;
 
       .contact-form {
-        @apply grid grid-cols-2 gap-x-6;
+        @apply grid grid-cols-2 sm:grid-cols-1 grid-flow-row sm:flex sm:flex-col gap-x-6;
 
         .form-group-base {
           @apply col-span-2;
         }
 
         .form-action-row {
-          @apply col-span-2 mt-2 flex justify-between items-center gap-x-4;
+          @apply col-span-2 mt-2 flex sm:flex-col justify-between sm:justify-start items-center sm:items-start gap-x-4 sm:gap-y-8;
 
           .form-action-text {
-            @apply text-gray-400/85 text-[14.75px] leading-[24px] w-[45%];
+            @apply text-gray-400/85 text-[14.75px] sm:text-[15px] leading-[24px] w-[45%] sm:w-full sm:order-1;
+          }
+
+          .btn {
+            @apply sm:order-2;
           }
         }
       }

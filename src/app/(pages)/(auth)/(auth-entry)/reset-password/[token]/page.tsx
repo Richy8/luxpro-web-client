@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-// import { ResetPasswordFormGroup } from "@/app/_components";
+import { AuthContainer } from "@/app/_components/(auth)";
+import { ResetPasswordFormGroup } from "@/app/_components/(form-group)";
 
 export const metadata: Metadata = {
   title: "Reset your password",
 };
 
 const ResetPassword = () => {
-  return <>{/* <ResetPasswordFormGroup /> */}</>;
+  return (
+    <>
+      <AuthContainer title="Change Password" placeCenter>
+        {/* FORM GROUP LAYER */}
+        <ResetPasswordFormGroup />
+      </AuthContainer>
+    </>
+  );
 };
 
 export default ResetPassword;

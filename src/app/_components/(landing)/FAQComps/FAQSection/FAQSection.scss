@@ -1,19 +1,19 @@
 .faq-section {
-  @apply relative pt-52 pb-32;
+  @apply relative pt-52 md:pt-44 sm:pt-40 xs:pt-36 pb-32 md:pb-24;
 
   .faq-content {
-    @apply flex justify-between items-start gap-x-16;
+    @apply flex justify-between items-start gap-x-16 lg:gap-x-12;
 
     .left-section {
-      @apply w-[55%];
+      @apply w-[55%] lg:w-[68%] md:w-full;
 
       .faq-list {
-        @apply flex flex-col justify-start items-start gap-y-7;
+        @apply flex flex-col justify-start items-start gap-y-7 sm:gap-y-6;
       }
     }
 
     .right-section {
-      @apply w-[28%];
+      @apply w-[28%] lg:w-[30%] md:hidden;
     }
   }
 }

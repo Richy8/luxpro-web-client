@@ -22,13 +22,13 @@
     @apply absolute -top-2 left-1/2 -translate-x-1/2 h-full flex flex-col justify-center items-start;
 
     .header-text {
-      @apply font-extrabold mb-4 text-[64px] leading-[72px] text-transparent;
+      @apply font-extrabold mb-4 text-[64px] lg:text-[58px] mdLg:text-[48px] sm:text-[40px] leading-[72px] lg:leading-[64px] mdLg:leading-[56px] sm:leading-[50px] text-transparent;
       background: linear-gradient(168.31deg, #ffffff 29.32%, #d2ac67 119.14%);
       background-clip: text;
     }
 
     .description-text {
-      @apply text-white font-medium text-lg mb-6 w-[36%];
+      @apply text-white font-medium text-lg sm:text-[17.25px] mb-6 w-2/5 lg:w-1/2 md:w-[85%] sm:w-[92%];
     }
   }
 }

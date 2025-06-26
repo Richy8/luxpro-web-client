@@ -1,18 +1,18 @@
 .checkout-block {
-  @apply relative pt-48;
+  @apply relative pt-48 sm:pt-40 xs:pt-36;
 
   .payment-options {
-    @apply mt-16;
+    @apply mt-16 sm:mt-10 xs:mt-9;
 
     .title-text {
-      @apply text-gray-600 text-[18px] font-semibold mb-4;
+      @apply text-gray-600 text-[18px] lg:text-[17.5px] font-semibold mb-4;
     }
 
     .option-list {
-      @apply flex flex-col justify-start items-start gap-y-6;
+      @apply flex flex-col justify-start items-start gap-y-6 xs:gap-y-4;
 
       .option-item {
-        @apply w-full cursor-pointer py-[18px] px-5 rounded-[32px] bg-[#F9F9F9] border border-[#E9EBED] flex justify-start items-center gap-x-4 transition duration-300 ease-in-out hover:bg-main-primary/15;
+        @apply w-full cursor-pointer py-[18px] xs:py-[16px] px-5 xs:px-4 rounded-[32px] bg-[#F9F9F9] border border-[#E9EBED] flex justify-start items-center gap-x-4 transition duration-300 ease-in-out hover:bg-main-primary/15;
 
         .option-content {
           @apply flex justify-start items-center gap-x-2;
@@ -22,7 +22,7 @@
           }
 
           .text {
-            @apply text-gray-400/70 text-lg font-semibold;
+            @apply text-gray-400/70 text-lg lg:text-[17.25px] font-semibold;
           }
         }
       }

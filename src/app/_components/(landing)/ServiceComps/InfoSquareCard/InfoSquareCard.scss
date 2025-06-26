@@ -1,11 +1,12 @@
 .info-square-card {
-  @apply flex flex-col justify-start items-center gap-y-8 w-full;
+  @apply flex flex-col justify-start items-center md:items-start gap-y-8 w-full;
+
   &:nth-of-type(2) {
-    @apply mt-20;
+    @apply mt-20 md:mt-0;
   }
 
   .image-display {
-    @apply relative w-full h-[410px] rounded-3xl overflow-hidden;
+    @apply relative w-full h-[410px] lg:h-[320px] md:h-[340px] rounded-3xl overflow-hidden;
 
     img {
       @apply w-full h-full object-cover;
@@ -13,14 +14,14 @@
   }
 
   .content-area {
-    @apply flex flex-col justify-start items-center gap-y-6 w-full px-8;
+    @apply flex flex-col justify-start items-center md:items-start gap-y-6 sm:gap-y-4 w-full px-8 md:px-0;
 
     .title-text {
-      @apply text-gray-800 text-[30px] leading-[40px] font-bold text-center;
+      @apply text-gray-800 text-[30px] lg:text-[22px] md:text-[30px] sm:text-[26px] leading-[40px] lg:leading-[32px] md:leading-[38px] xs:leading-[34px] font-bold text-center md:text-left;
     }
 
     .description-text {
-      @apply text-gray-400 text-lg text-center;
+      @apply text-gray-400 text-lg lg:text-[16.5px] md:text-lg text-center md:text-left;
     }
   }
 }

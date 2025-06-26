@@ -77,7 +77,7 @@ const GEInfoSection = () => {
         <TitleTopBlock description="Get fast and exclusive access to some of the world's greatest sporting, entertainment, and business events." />
 
         {/* INFO SECTION */}
-        <div className="grid grid-cols-3 gap-x-6 mb-[140px]">
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-x-6 md:gap-y-16 mb-[140px] sm:mb-[120px] sm:mt-3">
           {infoList.map((info, index: number) => (
             <InfoSquareCard
               key={index}
@@ -120,13 +120,16 @@ const GEInfoSection = () => {
             {`Upcoming `}
             <span className="text-main-primary">Events</span>
           </div>
+
           <div className="subtitle-text">
             Browse a selection of exclusive events where we can arrange VIP
             access and bespoke experiences.
           </div>
         </div>
 
-        <GEEventSection />
+        <div className="-mt-36 md:-mt-28">
+          <GEEventSection />
+        </div>
       </>
 
       <div className="base-container">

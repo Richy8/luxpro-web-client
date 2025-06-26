@@ -19,10 +19,10 @@ const ETServiceDetails = ({ details }: { details: any }) => {
   };
 
   return (
-    <div className="et-service-details mt-14">
+    <div className="et-service-details mt-14 sm:mt-10">
       <div className="base-container">
         {/* IMAGE GRID CAROUSEL */}
-        <div className="mb-14">
+        <div className="mb-14 sm:mb-10">
           <GridImageCarousel imageList={details?.images || []} />
         </div>
 
@@ -35,7 +35,7 @@ const ETServiceDetails = ({ details }: { details: any }) => {
           </TwoByOneBlock.Slot>
 
           <TwoByOneBlock.Slot name="right-block">
-            <div className="text-main-primary text-[32px] font-semibold mb-6">
+            <div className="text-main-primary text-[32px] lg:text-[28px] sm:text-[26px] font-semibold mb-6">
               {details?.amount}
             </div>
 
@@ -85,7 +85,7 @@ const ETServiceDetails = ({ details }: { details: any }) => {
                 onSelectChange={(value) => console.log(value)}
               />
 
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 sm:grid-cols-1 gap-6 sm:gap-3">
                 <TextInputField
                   labelId="checkIn"
                   labelTitle="Check In"

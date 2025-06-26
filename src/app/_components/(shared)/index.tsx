@@ -4,7 +4,7 @@ export { default as BaseTopBar } from "./(global)/BaseTopBar/BaseTopBar";
 export { default as BaseFooter } from "./(global)/BaseFooter/BaseFooter";
 export { default as BaseFooterCTA } from "./(global)/BaseFooterCTA/BaseFooterCTA";
 
-export { default as MobileBaseBar } from "./(global)/MobileBaseBar/MobileBaseBar";
+export { default as MobileNavMenu } from "./(global)/MobileNavMenu/MobileNavMenu";
 export { default as ProfileMenu } from "./(global)/ProfileMenu/ProfileMenu";
 export { default as BaseNavMenu } from "./(global)/BaseNavMenu/BaseNavMenu";
 

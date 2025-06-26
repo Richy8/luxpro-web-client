@@ -1,29 +1,34 @@
 "use client";
 
-import React, { ReactNode } from "react";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { LuxProDark } from "@/app/_assets";
+import React, { ReactNode, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import "./AuthEntryLayout.scss";
 
 const AuthEntryLayout = ({ children }: { children: ReactNode }) => {
-  const router = useRouter();
+  const pathname = usePathname();
+  const [paddingValue, setPaddingValue] = useState("pb-56");
+
+  useEffect(() => {
+    if (pathname === "/create-account") {
+      setPaddingValue("pb-56");
+    } else if (pathname === "/login") {
+      setPaddingValue("pb-28");
+    } else {
+      setPaddingValue("!pb-0");
+    }
+  }, [pathname]);
 
   return (
-    <div className="auth-entry-layout">
-      {/* CLOSE ICON */}
-      <div className="close-icon" onClick={() => router.push("/")}>
-        <div className="icon icon-times"></div>
-      </div>
+    <div className={`auth-entry-layout ${paddingValue}`}>
+      {/* OVERLAY  */}
+      <div className="overlay"></div>
 
-      <div className="app-container">
-        <div className="content-area">
-          <div className="brand-logo">
-            <Image src={LuxProDark} alt="LuxPro Logo" width={132} height={75} />
-          </div>
-
-          <div className="w-full h-auto">{children}</div>
-        </div>
+      <div
+        className={`app-container ${
+          !["/create-account", "/login"].includes(pathname) ? "!pb-0" : ""
+        } ${pathname === "/login" ? "!pb-0" : ""}`}
+      >
+        <div className="w-full h-auto">{children}</div>
       </div>
     </div>
   );

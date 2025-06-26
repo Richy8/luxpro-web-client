@@ -21,7 +21,7 @@ const IPServiceSection = () => {
   };
   return (
     <>
-      <div className="ge-service-section">
+      <div className="ip-service-section">
         <div className="base-container">
           <TwoByOneBlock layoutType="is-stack">
             <TwoByOneBlock.Slot name="left-block">

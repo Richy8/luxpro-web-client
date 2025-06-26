@@ -1,9 +1,9 @@
 .ge-info-section {
   .top-area {
-    @apply flex flex-col justify-start items-center gap-y-4 w-2/5 mb-16 mx-auto;
+    @apply flex flex-col justify-start items-center gap-y-4 w-2/5 lg:w-3/4 md:w-4/5 sm:w-[94%] mb-16 mx-auto;
 
     .title-text {
-      @apply text-gray-800 text-[46px] leading-[58px] font-bold;
+      @apply text-gray-800 text-[46px] lg:text-[42px] md:text-[36px] sm:text-[32px] xs:text-[30px] leading-[58px] lg:leading-[48px] md:leading-[40px] font-bold;
     }
 
     .subtitle-text {
@@ -12,17 +12,17 @@
   }
 
   .base-area {
-    @apply grid grid-cols-3 gap-6 mb-[120px];
+    @apply grid grid-cols-3 md:grid-cols-1 gap-6 mb-[120px] md:mb-[100px];
   }
 
   .ge-content-info-block {
-    @apply flex justify-between items-center gap-y-24 mb-[140px] mx-auto;
+    @apply flex md:flex-col justify-between md:justify-start items-center md:items-start gap-y-20 md:gap-y-16 mb-[140px] lg:mb-[120px] mx-auto;
 
     .ge-left-block {
-      @apply w-1/2;
+      @apply w-1/2 md:w-full;
 
       .ge-image-card {
-        @apply relative w-full h-[510px] rounded-3xl overflow-hidden;
+        @apply relative w-full h-[510px] lg:h-[480px] sm:h-[420px] xs:h-[400px] rounded-3xl overflow-hidden;
 
         img {
           @apply w-full h-full object-cover;
@@ -31,10 +31,10 @@
     }
 
     .ge-right-block {
-      @apply w-2/5;
+      @apply w-2/5 lg:w-[46%] md:w-full;
 
       .title-text {
-        @apply text-gray-800 text-[40px] leading-[48px] font-bold mb-7;
+        @apply text-gray-800 text-[40px] lg:text-[34px] mdLg:text-[30px] sm:text-[28px] xs:text-[26px] leading-[48px] lg:leading-[42px] mdLg:leading-[40px] sm:leading-[38px] font-bold mb-7;
       }
     }
   }

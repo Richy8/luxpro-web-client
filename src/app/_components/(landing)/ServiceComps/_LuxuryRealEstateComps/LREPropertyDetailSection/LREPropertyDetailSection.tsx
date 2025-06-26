@@ -29,7 +29,7 @@ const LREPropertyDetailSection = () => {
           {/* BASE CONTENT ROW */}
           <TwoByOneBlock>
             <TwoByOneBlock.Slot name="left-block">
-              <div className="content-wrapper mb-10">
+              <div className="content-wrapper mb-10 sm:mb-0 sm:-mt-6">
                 <div className="content-text">
                   A stunning 5-bedroom penthouse with panoramic city views,
                   private infinity pool, and premium concierge service. Designed
@@ -69,7 +69,7 @@ const LREPropertyDetailSection = () => {
             </TwoByOneBlock.Slot>
 
             <TwoByOneBlock.Slot name="right-block">
-              <div className="text-main-primary text-[30px] font-semibold mb-6">
+              <div className="text-main-primary text-[30px] md:text-[26px] sm:text-2xl xs:text-[22px] font-semibold mb-6">
                 $5,500 per night
               </div>
 

@@ -1,0 +1,31 @@
+.social-wrapper {
+  @apply mb-8 xs:mb-7;
+
+  .social-btn {
+    @apply w-full mb-8 xs:mb-7;
+
+    .icon {
+      @apply text-xl xs:text-[19px] font-medium relative -top-[1.5px];
+    }
+  }
+
+  .social-help-row {
+    @apply w-full relative text-base-background/80;
+
+    .line {
+      @apply absolute top-1/2 -translate-y-1/2 w-[34%] xs:w-[31%] h-[1px] bg-base-background/80;
+
+      &-one {
+        @apply left-0;
+      }
+
+      &-two {
+        @apply right-0;
+      }
+    }
+
+    .line-text {
+      @apply flex items-center justify-center text-center text-sm;
+    }
+  }
+}

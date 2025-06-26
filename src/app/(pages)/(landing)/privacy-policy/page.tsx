@@ -4,9 +4,9 @@ import { PageInfoRow } from "@/app/_components/(shared)";
 export default function PrivacyPolicy() {
   return (
     <>
-      <div className="primary-container">
-        <div className="center-layout">
-          <div className="mb-12">
+      <div className="primary-container relative">
+        <div className="center-layout ">
+          <div className="mb-12 lg:mb-8 sm:mb-6">
             <PageInfoRow
               pagePath={[{ itemText: "Privacy Policy", itemLink: "#" }]}
               title={
@@ -17,6 +17,7 @@ export default function PrivacyPolicy() {
               hasTopMargin
             />
           </div>
+
           <p className="paragraph-text">
             Welcome to LuxPro.vip. Your privacy is very important to us. This
             Privacy Policy explains how we collect, use, store, and protect your

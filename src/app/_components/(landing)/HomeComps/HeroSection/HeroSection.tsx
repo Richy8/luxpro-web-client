@@ -141,17 +141,21 @@ const HeroSection = () => {
               </div>
             ))}
           </div>
+
           <div className="users-text">
             16 people booked a visit in last 7 days
           </div>
         </div>
+
         <div className="header-text">
           Travel in Luxury, <br /> Live in Comfort
         </div>
+
         <div className="description-text">
-          Fly first class, stay in style, and ride in elegance — every detail is
+          Fly first class, stay in style, and ride in elegance, every detail is
           handled for you.
         </div>
+
         <Link href="/services" className="btn btn-md btn-primary">
           Let’s Plan Your Trip
         </Link>

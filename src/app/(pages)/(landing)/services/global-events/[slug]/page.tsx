@@ -43,11 +43,13 @@ const GlobalEventService = () => {
         />
       </div>
 
-      <div className="mt-14">
+      <div className="mt-14 md:mt-12 sm:mt-11">
         <GEServiceDetails details={globalEvent} />
       </div>
 
-      <GEEventSection title="Explore Other Global Events Packages" />
+      <div className="md:-mt-44">
+        <GEEventSection title="Explore Other Global Events Packages" />
+      </div>
 
       <CTACard
         title={

@@ -14,7 +14,7 @@ const ContactSection = () => {
             </>
           }
           description={
-            <div className="w-[45%]">
+            <div className="w-[45%] mdLg:w-3/5 md:w-4/5 sm:w-full">
               We’re here to help with every detail, from your next luxury
               experience to any questions you may have. Reach out to us anytime
               and our dedicated team will assist you promptly.

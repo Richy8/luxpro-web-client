@@ -14,7 +14,7 @@ const LVInfoSection = () => {
               for Yourself, Family & Friends
             </>
           }
-          titleWidth="!w-[60%]"
+          titleWidth="!w-[60%] md:!w-4/5 sm:!w-[92%]"
           description="Through a pooling system and solid working partnerships, we bring to individuals, families and corporate organizations some of the best vacation and destination packages."
         />
       </div>

@@ -1,11 +1,11 @@
 .breadcrumb {
-  @apply relative w-full flex justify-start items-center gap-x-2 sm:gap-x-1 mb-5;
+  @apply relative w-full flex mdLg:flex-wrap justify-start items-center gap-x-2 sm:gap-x-1 md:gap-y-1.5 mb-5;
 
   .breadcrumb-item {
     @apply relative flex justify-start items-center gap-x-2 sm:gap-x-1.5;
 
     .text {
-      @apply text-main-primary text-base font-medium cursor-pointer hover:text-white/70;
+      @apply text-main-primary text-base md:text-[15.75px] font-medium cursor-pointer hover:text-white/70 text-nowrap;
     }
 
     &.inactive-item {

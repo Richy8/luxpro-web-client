@@ -56,7 +56,7 @@ const LMInfoSection = () => {
         <TitleTopBlock description="Through our extensive network, we offer this across multiple locations across the globe. Whatever concierge needs you may have, we are just a click away." />
 
         {/* INFO SECTION */}
-        <div className="grid grid-cols-3 gap-x-6 mb-[140px]">
+        <div className="grid grid-cols-3 md:grid-cols-1 gap-x-6 md:gap-y-16 mb-[140px] sm:mb-[120px] sm:mt-3">
           {infoList.map((info, index: number) => (
             <InfoSquareCard
               key={index}

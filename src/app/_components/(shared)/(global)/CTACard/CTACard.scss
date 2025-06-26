@@ -1,16 +1,16 @@
 .cta-card-wrapper {
-  @apply relative my-6;
+  @apply relative my-6 sm:my-5;
 
   .cta-card {
-    @apply w-full h-auto rounded-3xl overflow-hidden bg-[#f8f0e3] p-20 flex justify-between items-center gap-x-5;
+    @apply w-full h-auto rounded-3xl overflow-hidden bg-[#f8f0e3] p-20 lg:px-14 mdLg:px-12 md:px-10 sm:px-8 xs:px-7 lg:py-16 sm:py-10 flex sm:flex-col justify-between sm:justify-start items-center sm:items-start gap-x-5 sm:gap-y-8;
 
     .cta-copy {
       .title-text {
-        @apply text-gray-600 text-[40px] leading-[54px] mb-4 w-4/5 font-bold;
+        @apply text-gray-600 text-[40px] lg:text-[32px] md:text-[28px] sm:text-[26px] leading-[54px] lg:leading-[48px] md:leading-[40px] sm:leading-[36px] mb-4 w-4/5 sm:w-full font-bold;
       }
 
       .description-text {
-        @apply text-gray-400/80 text-[17px] w-[65%];
+        @apply text-gray-400/80 text-[17px] md:text-[16.5px] sm:text-[16.25px] xs:text-[16px] w-[65%] md:w-3/4 sm:w-full;
       }
     }
   }

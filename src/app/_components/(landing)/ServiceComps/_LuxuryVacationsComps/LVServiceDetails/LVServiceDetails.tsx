@@ -41,7 +41,7 @@ const LVServiceDetails = ({ details }: { details: any }) => {
           </TwoByOneBlock.Slot>
 
           <TwoByOneBlock.Slot name="right-block">
-            <div className="text-main-primary text-[30px] font-semibold mb-6">
+            <div className="text-main-primary text-[30px] sm:text-[28px] xs:text-[24px] font-semibold mb-6">
               {details?.amount} per booking
             </div>
 

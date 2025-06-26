@@ -1,5 +1,5 @@
 .profile-menu {
-  @apply absolute z-30 top-14 -right-4 w-[330px] h-auto backdrop-blur-[36px] bg-gradient-to-b from-[rgba(73,73,73,0.65)] to-[rgba(51,50,50,0.65)] rounded-xl shadow-lg animate-slide-down border border-gray-300/80;
+  @apply absolute z-30 top-14 -right-4 mdLg:-right-8 md:-right-[86px] sm:-right-[72px] xs:-right-16 w-[330px] xs:w-[92.25vw] h-auto backdrop-blur-[36px] md:backdrop-blur-[42px] bg-gradient-to-b from-[rgba(73,73,73,0.65)] md:from-[rgba(73,73,73,0.8)] to-[rgba(51,50,50,0.65)] md:to-[rgba(51,50,50,0.8)] rounded-xl sm:rounded-[10px] shadow-lg animate-slide-down border border-gray-300/80;
 
   .menu-wrapper {
     @apply relative z-30 flex flex-col justify-start items-start gap-y-8 py-8 px-6 after:absolute after:size-3 after:right-[9%] after:-top-1.5 after:bg-[#818285] after:-z-10 after:rotate-45 after:hidden backdrop-blur-[54px] rounded-xl;
@@ -18,7 +18,7 @@
           }
 
           &-text {
-            @apply text-base transition duration-300 ease-in-out;
+            @apply text-base transition duration-300 ease-in-out sm:text-lg;
           }
         }
       }
@@ -32,17 +32,17 @@
       @apply flex flex-col justify-start items-start gap-y-8 w-full;
 
       .profile-row {
-        @apply flex justify-start items-center gap-x-4 w-full;
+        @apply flex justify-start items-center gap-x-4 sm:gap-x-3 w-full;
 
         &--img {
-          @apply size-12 min-w-12 min-h-12 rounded-full bg-main-primary flex justify-center items-center text-lg text-base-white font-semibold;
+          @apply size-12 sm:size-11 min-w-12 sm:min-w-11 min-h-12 sm:min-h-11 rounded-full bg-main-primary flex justify-center items-center text-lg sm:text-base text-base-white font-semibold;
         }
 
         &--user {
           @apply flex flex-col justify-start items-start gap-y-0.5 w-full;
 
           &-name {
-            @apply text-gray-50 font-medium text-base;
+            @apply text-gray-50 font-medium text-base sm:text-lg;
           }
 
           &-email {

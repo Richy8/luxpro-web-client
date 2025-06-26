@@ -1,16 +1,16 @@
 .base-about-section {
-  @apply relative w-full bg-[#f6f0e7] z-20 pt-28 pb-36;
+  @apply relative w-full bg-[#f6f0e7] z-20 pt-28 md:pt-24 pb-36 lg:pb-32 sm:pb-24;
 
   .top-section {
-    @apply flex flex-col justify-start items-center gap-y-4 w-[57%] mx-auto;
+    @apply flex flex-col justify-start items-center gap-y-4 w-[57%] lg:w-[65%] md:w-3/4 sm:w-[92%] mx-auto;
 
     p {
-      @apply text-center text-main-grey-700 text-[21px];
+      @apply text-center text-main-grey-700 text-[21px] xl:text-xl lg:text-lg md:text-[17px] lg:leading-[30px];
     }
   }
 
   .mid-section {
-    @apply flex justify-center items-start gap-x-9 my-16;
+    @apply flex sm:flex-wrap justify-center items-start gap-x-9 sm:gap-y-10 my-16 sm:mb-0;
 
     .stat-item {
       @apply flex justify-start items-center gap-x-3;
@@ -19,25 +19,25 @@
         @apply flex justify-start items-center gap-x-1.5;
 
         .stat-counter-icon {
-          @apply text-[36px] text-main-primary;
+          @apply text-[36px] sm:text-[32px] text-main-primary;
         }
 
         .stat-counter-text {
-          @apply text-main-primary text-[26px] font-medium;
+          @apply text-main-primary text-[26px] lg:text-2xl font-medium;
         }
       }
 
       .stat-label {
-        @apply text-main-grey-600 text-[17px] leading-[21.5px];
+        @apply text-main-grey-600 text-[17px] lg:text-[16.5px] leading-[21.5px];
       }
     }
   }
 
   .bottom-section {
-    @apply grid grid-cols-3 gap-x-6 gap-y-8;
+    @apply grid grid-cols-3 gap-x-6 mdLg:gap-x-3 gap-y-8 sm:hidden;
 
     .image-wrapper {
-      @apply relative w-[384px] h-[500px] rounded-3xl overflow-hidden border;
+      @apply relative w-full h-[500px] xl:h-[460px] lg:h-[420px] rounded-3xl overflow-hidden border;
 
       img {
         @apply w-full h-full object-cover;

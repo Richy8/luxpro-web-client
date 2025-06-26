@@ -1,18 +1,18 @@
 .et-customise-section {
-  @apply relative pt-52 pb-20;
+  @apply relative pt-52 md:pt-44 pb-20 md:pb-2;
 
   .form-content-block {
-    @apply mt-16 grid grid-cols-2 gap-x-6;
+    @apply mt-16 md:mt-12 grid grid-cols-2 md:flex md:flex-col grid-flow-row gap-x-6;
 
     .form-action-row {
-      @apply flex justify-between items-center gap-x-4;
+      @apply flex sm:flex-col justify-between sm:justify-start items-center sm:items-start gap-4 sm:gap-y-6;
 
       .btn {
-        @apply w-[170px];
+        @apply w-[170px] sm:order-2;
       }
 
       .form-action-text {
-        @apply text-gray-400/85 text-[14.75px] leading-[24px] w-1/2;
+        @apply text-gray-400/85 text-[14.75px] leading-[24px] w-1/2 sm:order-1 sm:w-full;
       }
     }
   }

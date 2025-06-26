@@ -1,18 +1,18 @@
 .ge-service-section {
-  @apply relative pt-52 pb-14;
+  @apply relative pt-52 lg:pt-44 md:pt-36 pb-14 md:pb-10;
 
   .form-content-block {
-    @apply mt-16 grid grid-cols-2 gap-x-6;
+    @apply mt-16 grid grid-cols-2 md:grid-cols-1 md:flex md:flex-col gap-x-6;
 
     .form-action-row {
-      @apply flex justify-between items-center gap-x-4;
+      @apply flex md:flex-col justify-between md:justify-start items-center md:items-start gap-x-4 md:gap-y-7;
 
       .btn {
-        @apply w-[170px];
+        @apply w-[170px] md:order-2;
       }
 
       .form-action-text {
-        @apply text-gray-400/85 text-[14.75px] leading-[24px] w-1/2;
+        @apply text-gray-400/85 text-[14.75px] leading-[24px] w-1/2 md:w-full md:order-1;
       }
     }
   }

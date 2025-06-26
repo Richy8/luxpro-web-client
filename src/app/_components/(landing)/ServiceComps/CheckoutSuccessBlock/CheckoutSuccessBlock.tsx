@@ -38,7 +38,7 @@ const CheckoutBlock = ({
         <TwoByOneBlock layoutType="is-checkout">
           <TwoByOneBlock.Slot name="left-block">
             <PageInfoRow pagePath={pagePath} title={<>{pageTitle}</>}>
-              {pageDescription}
+              <div className="sm:text-[15px]">{pageDescription}</div>
             </PageInfoRow>
           </TwoByOneBlock.Slot>
 

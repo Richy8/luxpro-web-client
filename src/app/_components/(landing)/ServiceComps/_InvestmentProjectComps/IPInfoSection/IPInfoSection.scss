@@ -1,10 +1,10 @@
 .ip-info-section {
   .section-title-text {
-    @apply text-center text-gray-800 text-[46px] leading-[58px] font-bold w-[45%] mx-auto;
+    @apply text-center text-gray-800 text-[46px] lg:text-[40px] mdLg:text-[36px] sm:text-[32px] leading-[58px] lg:leading-[50px] mdLg:leading-[48px] sm:leading-[44px] xs:leading-[44px] font-bold w-[45%] lg:w-3/5 md:w-4/5 sm:w-[96%] mx-auto;
   }
 
   .base-card-area {
-    @apply grid grid-cols-3 gap-6 mb-[120px];
+    @apply grid grid-cols-3 md:grid-cols-1 gap-6 mb-[120px] md:mb-[100px];
   }
 
   .testimonial-carousel {

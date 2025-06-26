@@ -34,7 +34,7 @@ const LREInfoSection = () => {
         <TitleTopBlock description="We have operating licenses in strategic cities and states where we operate and have built requisite capacity to deliver on investment opportunities in this space. Through our flagship services, we are growing our real estate portfolio in ways that benefit our members, partners and clients." />
 
         {/* SERVICE SECTION */}
-        <div className="flex flex-col justify-start items-center gap-y-20 mb-[60px]">
+        <div className="flex flex-col justify-start items-center gap-y-20 mb-[60px] sm:mb-[30px]">
           {serviceList.map((service, index: number) => (
             <InfoDataCardRow
               key={index}

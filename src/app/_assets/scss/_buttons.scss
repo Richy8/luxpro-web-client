@@ -85,3 +85,11 @@ button {
     @apply bg-main-primary border border-main-primary text-base-white;
   }
 }
+
+.btn-neutral {
+  @apply bg-gray-800 border border-gray-800 text-base-white;
+
+  &:hover {
+    @apply bg-main-primary border border-main-primary text-base-white;
+  }
+}

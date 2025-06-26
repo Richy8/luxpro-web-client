@@ -1,23 +1,20 @@
 .auth-entry-layout {
-  @apply relative h-full inset-0;
+  @apply relative w-full min-h-screen pb-40;
+  background-image: url("../../../../_assets/images/hero-three.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 
-  .close-icon {
-    @apply fixed top-8 right-8 size-12 min-w-12 min-h-12 rounded-full bg-gray-200/60 flex justify-center items-center cursor-pointer transition duration-300 ease-in-out hover:bg-main-tertiary-300/60;
-
-    .icon {
-      @apply text-3xl text-gray-600;
-    }
+  .base-image {
+    @apply fixed top-0 left-0 inset-0 w-screen h-screen object-cover z-0;
   }
 
-  .content-area {
-    @apply relative flex flex-col justify-start items-center pt-14 sm:pt-12 pb-20 mx-auto w-[55%] xl:w-[60%] lg:w-[75%] md:w-[85%] sm:w-full;
+  .overlay {
+    @apply fixed top-0 left-0 w-screen h-screen bg-black/40 z-10;
+  }
 
-    .brand-logo {
-      @apply relative mx-auto mb-14 sm:mb-10;
-
-      img {
-        @apply w-[124px] xl:w-[116px] lg:w-[108px] h-auto;
-      }
-    }
+  .app-container {
+    @apply relative z-20 w-full pb-32 xl:pb-40 sm:pb-28;
   }
 }

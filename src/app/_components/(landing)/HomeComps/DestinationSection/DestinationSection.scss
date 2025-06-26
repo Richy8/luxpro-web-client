@@ -1,23 +1,27 @@
 .destination-section {
-  @apply pt-24 pb-28;
+  @apply pt-24 md:pt-20 pb-28 lg:pb-20;
 
   .top-area {
-    @apply w-full mb-24;
+    @apply w-full mb-24 lg:mb-16 md:mb-10 sm:mb-6;
 
     .top-content {
-      @apply flex flex-col justify-start items-center gap-y-4 w-1/2 mx-auto;
+      @apply flex flex-col justify-start items-center gap-y-4 w-1/2 md:w-3/5 sm:w-4/5 xs:w-[88%] mx-auto;
 
       .title-text {
-        @apply text-gray-800 text-5xl leading-[56px] font-bold text-center;
+        @apply text-gray-800 text-5xl lg:text-[40px] mdLg:text-[36px] sm:text-[32px] xs:text-[30px] leading-[56px] lg:leading-[50px] mdLg:leading-[48px] sm:leading-[44px] xs:leading-[40px] font-bold text-center;
       }
 
       .description-text {
-        @apply text-gray-400 text-lg font-medium text-center w-3/4;
+        @apply text-gray-400 text-lg lg:text-[17px] font-medium text-center w-3/4 md:w-4/5 sm:w-[90%];
       }
     }
   }
 
   .base-area {
-    @apply w-full flex justify-center items-center pt-12 pb-16;
+    @apply w-full flex justify-center items-center pt-12 pb-16 lg:pb-12 sm:pb-8;
+
+    img {
+      @apply w-full h-auto;
+    }
   }
 }

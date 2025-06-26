@@ -20,7 +20,7 @@
       }
 
       .text {
-        @apply text-gray-400 font-medium text-[17px];
+        @apply text-gray-400 font-medium text-[17px] sm:text-[17.5];
       }
     }
   }

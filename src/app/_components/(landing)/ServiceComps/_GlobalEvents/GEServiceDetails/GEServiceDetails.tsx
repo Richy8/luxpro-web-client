@@ -15,9 +15,9 @@ const GEServiceDetails = ({ details }: { details: any }) => {
   };
 
   return (
-    <div className="ge-service-details mb-16">
+    <div className="ge-service-details mb-16 sm:mb-0 ">
       <div className="base-container">
-        <div className="mb-14">
+        <div className="mb-14 sm:mb-10">
           <GridImageCarousel imageList={details?.images || []} />
         </div>
 
@@ -40,7 +40,7 @@ const GEServiceDetails = ({ details }: { details: any }) => {
           </TwoByOneBlock.Slot>
 
           <TwoByOneBlock.Slot name="right-block">
-            <div className="text-main-primary text-[30px] font-semibold mb-6">
+            <div className="text-main-primary text-[30px] md:text-[26px] sm:text-[22px] font-semibold mb-6">
               {details?.amount} per ticket
             </div>
 

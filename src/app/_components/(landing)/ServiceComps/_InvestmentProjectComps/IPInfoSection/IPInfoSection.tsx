@@ -108,7 +108,7 @@ const IPInfoSection = () => {
         <TitleTopBlock description="These investments provide unique advantages to our discerning members to access smart investment opportunities across the world in different markets, including real estate, gaming, jewelry, boating and entertainment." />
 
         {/* SERVICE SECTION */}
-        <div className="flex flex-col justify-start items-center gap-y-20 mb-[120px]">
+        <div className="flex flex-col justify-start items-center gap-y-20 mb-[120px] sm:mb-[100px]">
           {serviceList.map((service, index: number) => (
             <InfoDataCardRow
               key={index}

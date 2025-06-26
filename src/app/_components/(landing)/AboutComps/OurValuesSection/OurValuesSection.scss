@@ -1,23 +1,23 @@
 .values-section {
-  @apply py-36;
+  @apply py-36 lg:py-28 sm:py-[88px];
 
   .top-row {
     @apply flex flex-col justify-start items-center gap-y-4 mb-12;
 
     .title-text {
-      @apply text-gray-800 text-5xl leading-[56px] font-bold text-center;
+      @apply text-gray-800 text-5xl lg:text-[40px] mdLg:text-[36px] sm:text-[32px] xs:text-[30px] leading-[56px] lg:leading-[50px] mdLg:leading-[48px] sm:leading-[44px] xs:leading-[40px] font-bold text-center;
     }
 
     .description-text {
-      @apply text-gray-400 text-lg font-medium text-center;
+      @apply text-gray-400 text-lg lg:text-[17px] font-medium text-center sm:w-4/5;
     }
   }
 
   .mid-row {
-    @apply grid grid-cols-3 gap-x-6 gap-y-8 mb-36;
+    @apply grid grid-cols-3 mdLg:grid-cols-2 sm:grid-cols-1 gap-x-6 lg:gap-x-5 gap-y-8 lg:gap-y-6 mb-36 lg:mb-32;
 
     .value-card {
-      @apply w-full p-8 flex flex-col justify-center items-center rounded-[20px] border border-[#e9ebed];
+      @apply w-full p-8 lg:p-6 flex flex-col justify-center items-center rounded-[20px] border border-[#e9ebed];
 
       .icon-wrapper {
         @apply size-14 min-w-14 min-h-14 rounded-full flex justify-center items-center border border-[#E9EBED] mb-6;
@@ -28,20 +28,20 @@
       }
 
       .title-text {
-        @apply text-gray-700 text-xl font-semibold text-center mb-4;
+        @apply text-gray-700 text-xl lg:text-[18.75px] sm:text-xl font-semibold text-center mb-4;
       }
 
       .description {
-        @apply text-gray-300 text-[17.5px] text-center;
+        @apply text-gray-300 text-[17.5px] lg:text-[16.25px] sm:text-[17.25px] sm:leading-[30px] text-center;
       }
     }
   }
 
   .bottom-row {
-    @apply flex justify-between items-center gap-x-16;
+    @apply flex sm:flex-col justify-between sm:justify-start items-center sm:items-start gap-x-16 lg:gap-x-10 sm:gap-y-20;
 
     .image-wrapper {
-      @apply relative w-[52%] h-[480px] rounded-3xl overflow-hidden;
+      @apply relative w-[52%] lg:w-1/2 mdLg:w-2/5 sm:w-full h-[480px] sm:h-[420px] xs:h-[400px] rounded-3xl overflow-hidden;
 
       img {
         @apply absolute inset-0 object-cover;
@@ -49,10 +49,10 @@
     }
 
     .value-content {
-      @apply w-[42%] pr-8;
+      @apply w-[42%] lg:w-[44%] mdLg:w-[56%] sm:w-full pr-8 lg:pr-6 mdLg:pr-2.5;
 
       .title-text {
-        @apply text-gray-800 text-[40px] leading-[54px] font-bold text-left mb-6;
+        @apply text-gray-800 text-[40px] lg:text-[36px] mdLg:text-[32px] sm:text-[28px] leading-[54px] lg:leading-[48px] sm:leading-[44px] xs:leading-[40px] font-bold text-left mb-6;
       }
 
       .list-items {
@@ -67,7 +67,7 @@
         }
 
         .item-text {
-          @apply text-gray-400 text-[17px];
+          @apply text-gray-400 text-[17px] lg:text-[16.75px] lg:leading-[28px];
         }
       }
     }

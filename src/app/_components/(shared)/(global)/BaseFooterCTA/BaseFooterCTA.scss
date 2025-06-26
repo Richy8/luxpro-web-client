@@ -7,24 +7,24 @@
   );
 
   &--container {
-    @apply flex justify-between items-center gap-x-5;
+    @apply flex mdLg:flex-wrap justify-between sm:justify-center items-center gap-5 xl:gap-4 xs:gap-y-6;
 
     .title-text {
-      @apply text-gray-800 text-[46px] font-semibold;
+      @apply text-gray-800 text-[46px] xl:text-[38px] lg:text-[34px] sm:text-[28px] xs:text-[25px] sm:text-center font-semibold;
     }
 
     .social-app-row {
-      @apply flex justify-end items-center gap-x-4;
+      @apply flex xs:flex-wrap justify-end xs:justify-center items-center gap-x-4 xl:gap-x-3 sm:gap-x-2 xs:gap-y-3;
 
       .social-btn {
-        @apply py-4 px-8 rounded-full bg-gray-900 flex justify-center items-center gap-x-2 cursor-pointer transition duration-300 ease-in-out hover:bg-gray-800/90 hover:scale-[98%];
+        @apply py-4 lg:py-3.5 xs:py-[15px] px-8 lg:px-7 sm:px-6 xs:w-4/5 rounded-full bg-gray-900 flex justify-center items-center gap-x-2 cursor-pointer transition duration-300 ease-in-out hover:bg-gray-800/90 hover:scale-[98%];
 
         .icon {
-          @apply text-base-white text-2xl;
+          @apply text-base-white text-2xl xl:text-[22px] sm:text-lg xs:text-[19px];
         }
 
         .text {
-          @apply text-base-white text-base font-medium;
+          @apply text-base-white text-base xl:text-[15px] sm:text-[14.5px] xs:text-[15px] font-medium;
         }
       }
     }

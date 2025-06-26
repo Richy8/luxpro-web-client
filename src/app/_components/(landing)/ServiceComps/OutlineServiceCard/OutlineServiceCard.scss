@@ -10,10 +10,10 @@
   }
 
   .title-text {
-    @apply text-gray-800 text-lg font-semibold text-center mb-4;
+    @apply text-gray-800 text-lg sm:text-[22px] font-semibold text-center mb-4;
   }
 
   .description-text {
-    @apply text-gray-300 text-[16.5px] text-center;
+    @apply text-gray-300 text-[16.5px] sm:text-[18.5px] sm:leading-[30px] text-center;
   }
 }

@@ -1,39 +1,39 @@
 .two-by-one-block {
-  @apply flex justify-between items-start gap-x-4 mt-16 mb-24;
+  @apply flex md:flex-col justify-between md:justify-start items-start gap-x-4 md:gap-y-16 mt-16 mb-24;
 
   .left-slot-block {
-    @apply w-[55%];
+    @apply w-[55%] md:w-full;
   }
 
   .right-slot-block {
-    @apply w-[32%] border border-[#E9EBED] rounded-[20px] p-6;
+    @apply w-[32%] lg:w-[39%] md:w-full border border-[#E9EBED] rounded-[20px] sm:rounded-2xl p-6 sm:p-4;
   }
 }
 
 .is-checkout {
-  @apply flex justify-between items-start gap-16 my-0;
+  @apply flex mdLg:flex-col justify-between mdLg:justify-start items-start gap-16 lg:gap-10 mdLg:gap-20 my-0;
 
   .left-slot-block {
-    @apply w-1/2;
+    @apply w-1/2 mdLg:w-full;
   }
 
   .right-slot-block {
-    @apply w-[32%] border-0 rounded-none p-0;
+    @apply w-[32%] lg:w-[36%] mdLg:w-full border-0 rounded-none p-0;
   }
 }
 
 .is-stack {
-  @apply flex justify-between items-start gap-x-16;
+  @apply flex mdLg:flex-col justify-between mdLg:justify-start items-start gap-x-16 mdLg:gap-10;
 
   .left-slot-block {
-    @apply w-[57%];
+    @apply w-[57%] mdLg:w-full;
   }
 
   .right-slot-block {
-    @apply w-[28%];
+    @apply w-[28%] lg:w-[36%] mdLg:hidden;
   }
 }
 
 .content-text {
-  @apply text-gray-400 text-[17.5px] leading-[28px] mb-8;
+  @apply text-gray-400 text-[17.5px] lg:text-[16.5px] leading-[28px] mb-8;
 }

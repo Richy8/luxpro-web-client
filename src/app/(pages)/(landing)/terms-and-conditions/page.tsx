@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
     <>
       <div className="primary-container">
         <div className="center-layout">
-          <div className="mb-12">
+          <div className="mb-12 lg:mb-8 sm:mb-6">
             <PageInfoRow
               pagePath={[{ itemText: "Terms and Conditions", itemLink: "#" }]}
               title={

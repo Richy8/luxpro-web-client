@@ -1,15 +1,15 @@
 .discover-card {
-  @apply pt-[100px] pb-[30px];
+  @apply pt-[100px] md:pt-[75px] pb-[30px] md:pb-[16px];
 
   .top-row {
     .title-text {
-      @apply text-gray-700 text-[44px] leading-[56px] font-bold mb-12;
+      @apply text-gray-700 text-[44px] lg:text-[40px] mdLg:text-[36px] sm:text-[32px] xs:text-[30px] leading-[56px] lg:leading-[50px] mdLg:leading-[48px] sm:leading-[44px] xs:leading-[40px] font-bold mb-12;
     }
   }
 
   .base-row {
     .service-row {
-      @apply grid grid-cols-4 grid-flow-row gap-6;
+      @apply grid grid-cols-4 mdLg:grid-cols-2 sm:grid-cols-1 grid-flow-row gap-6 lg:gap-3 mdLg:gap-8 md:gap-6;
     }
   }
 }
